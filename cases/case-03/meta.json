@@ -1,0 +1,7 @@
+{
+  "case_id": "case-03",
+  "channel": "email",
+  "received_at": "2026-08-05T16:48:19Z",
+  "from": "john.smith.personal@mailbox.example",
+  "subject": "complaint - flight was late"
+}

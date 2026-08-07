@@ -1,0 +1,178 @@
+{
+  "AK412:2026-08-04": {
+    "flight_no": "AK412", "date": "2026-08-04",
+    "origin": "LHR", "destination": "BCN", "distance_km": 1146,
+    "scheduled_departure": "2026-08-04T07:20:00Z", "scheduled_arrival": "2026-08-04T10:35:00Z",
+    "status": "CANCELLED", "cause_code": "WEATHER",
+    "cause_note": "Thunderstorm activity over BCN terminal area; airport ground stop 06:10-11:40 local.",
+    "departure_delay_minutes": null, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK220:2026-08-05": {
+    "flight_no": "AK220", "date": "2026-08-05",
+    "origin": "MAN", "destination": "FCO", "distance_km": 1819,
+    "scheduled_departure": "2026-08-05T06:45:00Z", "scheduled_arrival": "2026-08-05T10:20:00Z",
+    "status": "CANCELLED", "cause_code": "TECHNICAL",
+    "cause_note": "Hydraulic system fault identified during pre-flight inspection. Aircraft withdrawn from service; no replacement airframe at station.",
+    "departure_delay_minutes": null, "aircraft": "A321", "operated_by": "Aerlink"
+  },
+  "AK533:2026-08-04": {
+    "flight_no": "AK533", "date": "2026-08-04",
+    "origin": "LHR", "destination": "DUB", "distance_km": 449,
+    "scheduled_departure": "2026-08-04T11:05:00Z", "scheduled_arrival": "2026-08-04T12:35:00Z",
+    "status": "DELAYED", "cause_code": "ATC_RESTRICTION",
+    "cause_note": "Dublin arrivals flow restriction.",
+    "departure_delay_minutes": 95, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK118:2026-08-04": {
+    "flight_no": "AK118", "date": "2026-08-04",
+    "origin": "LGW", "destination": "EDI", "distance_km": 534,
+    "scheduled_departure": "2026-08-04T16:30:00Z", "scheduled_arrival": "2026-08-04T17:55:00Z",
+    "status": "CANCELLED", "cause_code": "OPERATIONAL",
+    "cause_note": "Inbound aircraft rotation failure.",
+    "departure_delay_minutes": null, "aircraft": "A319", "operated_by": "Aerlink"
+  },
+  "AK641:2026-08-04": {
+    "flight_no": "AK641", "date": "2026-08-04",
+    "origin": "MAN", "destination": "AMS", "distance_km": 486,
+    "scheduled_departure": "2026-08-04T09:15:00Z", "scheduled_arrival": "2026-08-04T11:40:00Z",
+    "status": "DELAYED", "cause_code": "GROUND_HANDLING",
+    "cause_note": "Contracted ground handler unable to provide loading crew.",
+    "departure_delay_minutes": 140, "aircraft": "A319", "operated_by": "Aerlink"
+  },
+  "AK808:2026-08-03": {
+    "flight_no": "AK808", "date": "2026-08-03",
+    "origin": "EDI", "destination": "AMS", "distance_km": 665,
+    "scheduled_departure": "2026-08-03T18:40:00Z", "scheduled_arrival": "2026-08-03T21:20:00Z",
+    "status": "CANCELLED", "cause_code": "WEATHER",
+    "cause_note": "Freezing fog at EDI; RVR below operating minima 17:20-23:00 local. Two Aerlink rotations and eleven other-carrier movements cancelled in the same period. Crew for AK808 were on stand and within hours at the time of cancellation.",
+    "departure_delay_minutes": null, "aircraft": "A319", "operated_by": "Aerlink"
+  },
+  "AK155:2026-08-06": {
+    "flight_no": "AK155", "date": "2026-08-06",
+    "origin": "LGW", "destination": "DUB", "distance_km": 469,
+    "scheduled_departure": "2026-08-06T13:10:00Z", "scheduled_arrival": "2026-08-06T14:40:00Z",
+    "status": "DELAYED", "cause_code": "TECHNICAL",
+    "cause_note": "Avionics fault; rectified at stand.",
+    "departure_delay_minutes": 215, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK307:2026-08-02": {
+    "flight_no": "AK307", "date": "2026-08-02",
+    "origin": "LHR", "destination": "MAD", "distance_km": 1264,
+    "scheduled_departure": "2026-08-02T14:25:00Z", "scheduled_arrival": "2026-08-02T18:00:00Z",
+    "status": "CANCELLED", "cause_code": "TECHNICAL",
+    "cause_note": "Engine borescope inspection required following in-service indication.",
+    "departure_delay_minutes": null, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK640:2026-08-01": {
+    "flight_no": "AK640", "date": "2026-08-01",
+    "origin": "LIS", "destination": "LHR", "distance_km": 1585,
+    "scheduled_departure": "2026-08-01T12:00:00Z", "scheduled_arrival": "2026-08-01T14:45:00Z",
+    "status": "CANCELLED", "cause_code": "TECHNICAL",
+    "cause_note": "Cabin pressurisation fault. Passengers re-accommodated on AK644.",
+    "departure_delay_minutes": null, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK587:2026-07-27": {
+    "flight_no": "AK587", "date": "2026-07-27",
+    "origin": "LHR", "destination": "LIS", "distance_km": 1585,
+    "scheduled_departure": "2026-07-27T09:15:00Z", "scheduled_arrival": "2026-07-27T11:50:00Z",
+    "status": "DEPARTED", "cause_code": null,
+    "cause_note": "Operated as scheduled.",
+    "departure_delay_minutes": 5, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK644:2026-08-01": {
+    "flight_no": "AK644", "date": "2026-08-01",
+    "origin": "LIS", "destination": "LHR", "distance_km": 1585,
+    "scheduled_departure": "2026-08-01T17:05:00Z", "scheduled_arrival": "2026-08-01T19:50:00Z",
+    "status": "DEPARTED", "cause_code": null,
+    "cause_note": "Operated as scheduled. Carried re-accommodated AK640 passengers.",
+    "departure_delay_minutes": 0, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK512:2026-08-06": {
+    "flight_no": "AK512", "date": "2026-08-06",
+    "origin": "LGW", "destination": "DXB", "distance_km": 5494,
+    "scheduled_departure": "2026-08-06T21:35:00Z", "scheduled_arrival": "2026-08-07T08:20:00Z",
+    "status": "CANCELLED", "cause_code": "TECHNICAL",
+    "cause_note": "Fuel system fault found on turnaround. No spare widebody at LGW. Next Aerlink service DXB 2026-08-07 21:35.",
+    "departure_delay_minutes": null, "aircraft": "B787-9", "operated_by": "Aerlink"
+  },
+  "AK150:2026-08-06": {
+    "flight_no": "AK150", "date": "2026-08-06",
+    "origin": "LGW", "destination": "FCO", "distance_km": 1435,
+    "scheduled_departure": "2026-08-06T19:50:00Z", "scheduled_arrival": "2026-08-06T23:15:00Z",
+    "status": "CANCELLED", "cause_code": "TECHNICAL",
+    "cause_note": "Nosewheel steering fault. Aircraft withdrawn. No further FCO service this date.",
+    "departure_delay_minutes": null, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK229:2026-08-05": {
+    "flight_no": "AK229", "date": "2026-08-05",
+    "origin": "LHR", "destination": "GVA", "distance_km": 748,
+    "scheduled_departure": "2026-08-05T07:55:00Z", "scheduled_arrival": "2026-08-05T10:40:00Z",
+    "status": "CANCELLED", "cause_code": "CREW",
+    "cause_note": "Operating crew out of hours following previous-day disruption. No standby crew at LHR.",
+    "departure_delay_minutes": null, "aircraft": "A319", "operated_by": "Aerlink"
+  },
+  "AK418:2026-08-05": {
+    "flight_no": "AK418", "date": "2026-08-05",
+    "origin": "BCN", "destination": "LHR", "distance_km": 1146,
+    "scheduled_departure": "2026-08-05T18:15:00Z", "scheduled_arrival": "2026-08-05T19:55:00Z",
+    "status": "CANCELLED", "cause_code": "TECHNICAL",
+    "cause_note": "Fallo en el sistema de aire acondicionado. Aeronave retirada del servicio. / Air conditioning system fault. Aircraft withdrawn from service.",
+    "departure_delay_minutes": null, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK720:2026-08-05": {
+    "flight_no": "AK720", "date": "2026-08-05",
+    "origin": "LHR", "destination": "FCO", "distance_km": 1435,
+    "scheduled_departure": "2026-08-05T13:40:00Z", "scheduled_arrival": "2026-08-05T17:05:00Z",
+    "status": "CANCELLED", "cause_code": "TECHNICAL",
+    "cause_note": "APU failure; aircraft unserviceable at stand.",
+    "departure_delay_minutes": null, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK311:2026-08-05": {
+    "flight_no": "AK311", "date": "2026-08-05",
+    "origin": "MAN", "destination": "DUB", "distance_km": 264,
+    "scheduled_departure": "2026-08-05T08:30:00Z", "scheduled_arrival": "2026-08-05T09:35:00Z",
+    "status": "CANCELLED", "cause_code": "OPERATIONAL",
+    "cause_note": "Commercial cancellation; passengers consolidated onto AK315.",
+    "departure_delay_minutes": null, "aircraft": "A319", "operated_by": "Aerlink"
+  },
+  "AK905:2026-07-28": {
+    "flight_no": "AK905", "date": "2026-07-28",
+    "origin": "LHR", "destination": "AMS", "distance_km": 371,
+    "scheduled_departure": "2026-07-28T06:50:00Z", "scheduled_arrival": "2026-07-28T09:05:00Z",
+    "status": "DEPARTED", "cause_code": null,
+    "cause_note": "Operated as scheduled.",
+    "departure_delay_minutes": 12, "aircraft": "A319", "operated_by": "Aerlink"
+  },
+  "AK444:2026-08-04": {
+    "flight_no": "AK444", "date": "2026-08-04",
+    "origin": "LGW", "destination": "MAD", "distance_km": 1259,
+    "scheduled_departure": "2026-08-04T10:15:00Z", "scheduled_arrival": "2026-08-04T13:45:00Z",
+    "status": "CANCELLED", "cause_code": "TECHNICAL",
+    "cause_note": "Flap actuator fault.",
+    "departure_delay_minutes": null, "aircraft": "A320", "operated_by": "Aerlink"
+  },
+  "AK266:2026-08-07": {
+    "flight_no": "AK266", "date": "2026-08-07",
+    "origin": "LHR", "destination": "DXB", "distance_km": 5500,
+    "scheduled_departure": "2026-08-07T10:05:00Z", "scheduled_arrival": "2026-08-07T20:35:00Z",
+    "status": "CANCELLED", "cause_code": "TECHNICAL",
+    "cause_note": "Cargo door seal failure.",
+    "departure_delay_minutes": null, "aircraft": "B787-9", "operated_by": "Aerlink"
+  },
+  "AK377:2026-08-03": {
+    "flight_no": "AK377", "date": "2026-08-03",
+    "origin": "EDI", "destination": "LHR", "distance_km": 534,
+    "scheduled_departure": "2026-08-03T15:20:00Z", "scheduled_arrival": "2026-08-03T16:50:00Z",
+    "status": "DEPARTED", "cause_code": null,
+    "cause_note": "Operated as scheduled.",
+    "departure_delay_minutes": 8, "aircraft": "A319", "operated_by": "Aerlink"
+  },
+  "AK588:2026-08-08": {
+    "flight_no": "AK588", "date": "2026-08-08",
+    "origin": "LHR", "destination": "LIS", "distance_km": 1585,
+    "scheduled_departure": "2026-08-08T11:30:00Z", "scheduled_arrival": "2026-08-08T14:05:00Z",
+    "status": "CANCELLED", "cause_code": "CREW",
+    "cause_note": "Captain reported unfit to fly; no standby captain available at LHR. Aerlink LIS service suspended for remainder of date; next own-metal service 2026-08-10.",
+    "departure_delay_minutes": null, "aircraft": "A320", "operated_by": "Aerlink"
+  }
+}

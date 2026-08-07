@@ -1,0 +1,36 @@
+{
+  "hotel_allocation": {
+    "LGW:2026-08-06": {"station": "LGW", "night": "2026-08-06", "provider": "Gatwick Airport Lodging Consortium", "rooms_total": 40, "rooms_remaining": 1, "rate_gbp": 165.00},
+    "LGW:2026-08-07": {"station": "LGW", "night": "2026-08-07", "provider": "Gatwick Airport Lodging Consortium", "rooms_total": 40, "rooms_remaining": 22, "rate_gbp": 165.00},
+    "LHR:2026-08-05": {"station": "LHR", "night": "2026-08-05", "provider": "Heathrow Crew & Passenger Accommodation", "rooms_total": 90, "rooms_remaining": 47, "rate_gbp": 178.00},
+    "LHR:2026-08-06": {"station": "LHR", "night": "2026-08-06", "provider": "Heathrow Crew & Passenger Accommodation", "rooms_total": 90, "rooms_remaining": 61, "rate_gbp": 178.00},
+    "LHR:2026-08-07": {"station": "LHR", "night": "2026-08-07", "provider": "Heathrow Crew & Passenger Accommodation", "rooms_total": 90, "rooms_remaining": 55, "rate_gbp": 178.00},
+    "MAN:2026-08-05": {"station": "MAN", "night": "2026-08-05", "provider": "Manchester Airport Hotels Group", "rooms_total": 30, "rooms_remaining": 18, "rate_gbp": 132.00},
+    "EDI:2026-08-03": {"station": "EDI", "night": "2026-08-03", "provider": "Edinburgh Airport Accommodation", "rooms_total": 25, "rooms_remaining": 0, "rate_gbp": 148.00},
+    "BCN:2026-08-05": {"station": "BCN", "night": "2026-08-05", "provider": "Barcelona El Prat Partner Hotels", "rooms_total": 20, "rooms_remaining": 14, "rate_gbp": 155.00},
+    "LIS:2026-08-08": {"station": "LIS", "night": "2026-08-08", "provider": "Lisboa Airport Hotels", "rooms_total": 18, "rooms_remaining": 11, "rate_gbp": 139.00}
+  },
+  "airports": {
+    "LHR": {"iata": "LHR", "name": "London Heathrow", "city": "London", "country": "GB", "timezone": "Europe/London"},
+    "LGW": {"iata": "LGW", "name": "London Gatwick", "city": "London", "country": "GB", "timezone": "Europe/London"},
+    "MAN": {"iata": "MAN", "name": "Manchester", "city": "Manchester", "country": "GB", "timezone": "Europe/London"},
+    "EDI": {"iata": "EDI", "name": "Edinburgh", "city": "Edinburgh", "country": "GB", "timezone": "Europe/London"},
+    "DUB": {"iata": "DUB", "name": "Dublin", "city": "Dublin", "country": "IE", "timezone": "Europe/Dublin"},
+    "AMS": {"iata": "AMS", "name": "Amsterdam Schiphol", "city": "Amsterdam", "country": "NL", "timezone": "Europe/Amsterdam"},
+    "BCN": {"iata": "BCN", "name": "Barcelona El Prat", "city": "Barcelona", "country": "ES", "timezone": "Europe/Madrid"},
+    "MAD": {"iata": "MAD", "name": "Madrid Barajas", "city": "Madrid", "country": "ES", "timezone": "Europe/Madrid"},
+    "FCO": {"iata": "FCO", "name": "Rome Fiumicino", "city": "Rome", "country": "IT", "timezone": "Europe/Rome"},
+    "LIS": {"iata": "LIS", "name": "Lisbon Humberto Delgado", "city": "Lisbon", "country": "PT", "timezone": "Europe/Lisbon"},
+    "GVA": {"iata": "GVA", "name": "Geneva", "city": "Geneva", "country": "CH", "timezone": "Europe/Zurich"},
+    "DXB": {"iata": "DXB", "name": "Dubai International", "city": "Dubai", "country": "AE", "timezone": "Asia/Dubai"},
+    "CDG": {"iata": "CDG", "name": "Paris Charles de Gaulle", "city": "Paris", "country": "FR", "timezone": "Europe/Paris"}
+  },
+  "route_distances_km": {
+    "LHR-BCN": 1146, "LHR-DUB": 449, "LHR-MAD": 1264, "LHR-AMS": 371, "LHR-GVA": 748,
+    "LHR-FCO": 1435, "LHR-LIS": 1585, "LHR-DXB": 5500, "LHR-CDG": 344,
+    "LGW-EDI": 534, "LGW-DUB": 469, "LGW-DXB": 5494, "LGW-FCO": 1435, "LGW-MAD": 1259,
+    "MAN-FCO": 1819, "MAN-AMS": 486, "MAN-DUB": 264,
+    "EDI-AMS": 665, "EDI-LHR": 534,
+    "LIS-LHR": 1585, "BCN-LHR": 1146
+  }
+}

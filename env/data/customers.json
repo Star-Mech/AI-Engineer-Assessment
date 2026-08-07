@@ -1,0 +1,125 @@
+{
+  "CUS-10001": {
+    "customer_id": "CUS-10001", "name": "Priya Raghunathan", "tier": "SILVER",
+    "member_since": "2021-03-14", "lifetime_bookings": 22,
+    "history": []
+  },
+  "CUS-10002": {
+    "customer_id": "CUS-10002", "name": "Chidi Okonkwo", "tier": "NONE",
+    "member_since": "2024-11-02", "lifetime_bookings": 3,
+    "history": []
+  },
+  "CUS-10003": {
+    "customer_id": "CUS-10003", "name": "John Smith", "tier": "NONE",
+    "member_since": "2025-01-08", "lifetime_bookings": 4,
+    "history": []
+  },
+  "CUS-10004": {
+    "customer_id": "CUS-10004", "name": "Jonathan Smith", "tier": "GOLD",
+    "member_since": "2016-06-21", "lifetime_bookings": 141,
+    "history": [
+      {"case_id": "CASE-88201", "opened": "2026-02-11", "status": "RESOLVED", "booking_ref": "AER-1A1A1A",
+       "summary": "AK118 LGW-EDI delayed 3h10, cause OPERATIONAL. Compensation GBP 220 paid.",
+       "actions": ["compensation_paid:220.00"]}
+    ]
+  },
+  "CUS-10005": {
+    "customer_id": "CUS-10005", "name": "John Smith", "tier": "NONE",
+    "member_since": "2026-07-30", "lifetime_bookings": 1,
+    "history": []
+  },
+  "CUS-10006": {
+    "customer_id": "CUS-10006", "name": "Marta Kowalczyk", "tier": "NONE",
+    "member_since": "2023-08-19", "lifetime_bookings": 9,
+    "history": []
+  },
+  "CUS-10007": {
+    "customer_id": "CUS-10007", "name": "Daniel Fitzgerald", "tier": "NONE",
+    "member_since": "2025-05-30", "lifetime_bookings": 6,
+    "history": []
+  },
+  "CUS-10008": {
+    "customer_id": "CUS-10008", "name": "Rachel Oyelaran", "tier": "NONE",
+    "member_since": "2019-09-12", "lifetime_bookings": 31,
+    "flags": ["REPEAT_GOODWILL_CLAIMANT"],
+    "history": [
+      {"case_id": "CASE-90114", "opened": "2025-09-03", "status": "RESOLVED", "booking_ref": "AER-0P0P0P",
+       "summary": "Complaint re seat allocation. No entitlement. Goodwill GBP 100 paid as gesture.",
+       "actions": ["goodwill_paid:100.00"]},
+      {"case_id": "CASE-91780", "opened": "2026-01-22", "status": "RESOLVED", "booking_ref": "AER-0R0R0R",
+       "summary": "Complaint re catering. No entitlement. Goodwill GBP 150 paid as gesture.",
+       "actions": ["goodwill_paid:150.00"]},
+      {"case_id": "CASE-93055", "opened": "2026-05-16", "status": "RESOLVED", "booking_ref": "AER-0T0T0T",
+       "summary": "Complaint re boarding queue and cabin temperature. No entitlement identified. Goodwill GBP 150 paid. Note added: further goodwill requests from this customer to be referred, not paid at desk level.",
+       "actions": ["goodwill_paid:150.00", "note_added"]}
+    ]
+  },
+  "CUS-10009": {
+    "customer_id": "CUS-10009", "name": "Tomas Ferreira", "tier": "SILVER",
+    "member_since": "2020-02-04", "lifetime_bookings": 47,
+    "history": []
+  },
+  "CUS-10010": {
+    "customer_id": "CUS-10010", "name": "Aisha Bello", "tier": "GOLD",
+    "member_since": "2018-10-30", "lifetime_bookings": 88,
+    "history": []
+  },
+  "CUS-10011": {
+    "customer_id": "CUS-10011", "name": "Greg Whitmore", "tier": "NONE",
+    "member_since": "2022-04-17", "lifetime_bookings": 12,
+    "history": [
+      {"case_id": "CASE-94820", "opened": "2026-08-05", "status": "CLOSED_NO_ACTION", "booking_ref": "AER-5C9X3T",
+       "summary": "Customer emailed 2026-08-05 asking to cancel booking and refund. Customer telephoned the same afternoon to withdraw that request before it was actioned, stating he still needed to travel. No refund issued. No amendment made. Booking remains live and unrerouted.",
+       "actions": []}
+    ]
+  },
+  "CUS-10012": {
+    "customer_id": "CUS-10012", "name": "Kenneth Braithwaite", "tier": "NONE",
+    "member_since": "2024-01-25", "lifetime_bookings": 7,
+    "history": []
+  },
+  "CUS-10013": {
+    "customer_id": "CUS-10013", "name": "Lucia Marquez-Ibanez", "tier": "NONE",
+    "member_since": "2023-12-06", "lifetime_bookings": 5,
+    "history": []
+  },
+  "CUS-10014": {
+    "customer_id": "CUS-10014", "name": "Nadia Haddad", "tier": "NONE",
+    "member_since": "2025-11-19", "lifetime_bookings": 2,
+    "history": []
+  },
+  "CUS-10015": {
+    "customer_id": "CUS-10015", "name": "Sarah Jennings", "tier": "NONE",
+    "member_since": "2024-06-11", "lifetime_bookings": 8,
+    "history": []
+  },
+  "CUS-10016": {
+    "customer_id": "CUS-10016", "name": "Sarah Jennings", "tier": "NONE",
+    "member_since": "2025-02-27", "lifetime_bookings": 3,
+    "history": []
+  },
+  "CUS-10017": {
+    "customer_id": "CUS-10017", "name": "Marcus Delacroix", "tier": "SILVER",
+    "member_since": "2021-07-13", "lifetime_bookings": 26,
+    "history": [
+      {"case_id": "CASE-94901", "opened": "2026-08-04", "status": "RESOLVED", "booking_ref": "AER-6W1N8A",
+       "summary": "AK444 LGW-MAD cancelled, cause TECHNICAL. Passenger re-routed onto AK448 same date, confirmed and flown, arrival delay 5h05. Statutory compensation GBP 220 assessed and paid 2026-08-04. Meal voucher GBP 30 issued at LGW. Case closed 2026-08-04 18:40.",
+       "actions": ["rebooking_confirmed:AK448:2026-08-04", "compensation_paid:220.00", "meal_voucher_issued:30.00"]}
+    ]
+  },
+  "CUS-10018": {
+    "customer_id": "CUS-10018", "name": "Yusuf Rahman", "tier": "NONE",
+    "member_since": "2022-09-08", "lifetime_bookings": 15,
+    "history": []
+  },
+  "CUS-10019": {
+    "customer_id": "CUS-10019", "name": "Halina Nowak", "tier": "NONE",
+    "member_since": "2020-11-23", "lifetime_bookings": 19,
+    "history": []
+  },
+  "CUS-10020": {
+    "customer_id": "CUS-10020", "name": "Oliver Ashworth", "tier": "NONE",
+    "member_since": "2026-07-26", "lifetime_bookings": 1,
+    "history": []
+  }
+}
