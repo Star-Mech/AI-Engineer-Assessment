@@ -1,0 +1,2335 @@
+{
+  "total_requests": 150,
+  "writes": {
+    "rebookings": [
+      {
+        "rebooking_id": "RBK-00001",
+        "confirmed_at": "2026-08-27T05:53:41Z",
+        "status": "CONFIRMED",
+        "booking_ref": "AER-4K2P9X",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-F1C4639EBC",
+        "flight_no": "AK845",
+        "date": "2026-08-04",
+        "cabin": "ECONOMY",
+        "fare_gbp": 0,
+        "notes": null
+      },
+      {
+        "rebooking_id": "RBK-00017",
+        "confirmed_at": "2026-08-27T06:16:14Z",
+        "status": "CONFIRMED",
+        "booking_ref": "AER-5C9X3T",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-CE02C1D4BE",
+        "flight_no": "AK151",
+        "date": "2026-08-10",
+        "cabin": "ECONOMY",
+        "fare_gbp": 0,
+        "notes": null
+      },
+      {
+        "rebooking_id": "RBK-00024",
+        "confirmed_at": "2026-08-27T06:23:54Z",
+        "status": "CONFIRMED",
+        "booking_ref": "AER-1F6G8P",
+        "passenger_ids": [
+          "P1",
+          "P2"
+        ],
+        "option_id": "OPT-B2D9ADDE62",
+        "flight_no": "AK612",
+        "date": "2026-08-06",
+        "cabin": "ECONOMY",
+        "fare_gbp": 0,
+        "notes": null
+      }
+    ],
+    "refunds": [
+      {
+        "refund_id": "RFD-00004",
+        "issued_at": "2026-08-27T06:01:17Z",
+        "status": "ISSUED",
+        "amount_gbp": 297.5,
+        "booking_ref": "AER-7T3M1B",
+        "passenger_ids": [
+          "P5"
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "payment_id": "CMP-00009",
+        "type": "COMPENSATION",
+        "paid_at": "2026-08-27T06:08:36Z",
+        "status": "PAID",
+        "amount_gbp": 220.0,
+        "booking_ref": "AER-2Q8W4N",
+        "passenger_ids": [
+          "P1"
+        ],
+        "reason": "Statutory compensation for delay on AK155 (LGW-DUB) 2026-08-06"
+      },
+      {
+        "payment_id": "CMP-00012",
+        "type": "COMPENSATION",
+        "paid_at": "2026-08-27T06:10:01Z",
+        "status": "PAID",
+        "amount_gbp": 220.0,
+        "booking_ref": "AER-6H1Z7C",
+        "passenger_ids": [
+          "P1"
+        ],
+        "reason": "Statutory compensation for AK307 (LHR–MAD) on 2026-08-02: flight cancelled, passenger re-routed to AK309 same day, arrival delay at final destination 270 minutes."
+      },
+      {
+        "payment_id": "CMP-00014",
+        "type": "COMPENSATION",
+        "paid_at": "2026-08-27T06:11:05Z",
+        "status": "PAID",
+        "amount_gbp": 415.0,
+        "booking_ref": "AER-3B7Y5K",
+        "passenger_ids": [
+          "P1"
+        ],
+        "reason": "Cancellation with re-routing; TECHNICAL cause within Aerlink control; arrival delay at final destination 220 minutes triggers compensation with 50% reduction per S5.4."
+      },
+      {
+        "payment_id": "GWP-00023",
+        "type": "GOODWILL",
+        "paid_at": "2026-08-27T06:21:50Z",
+        "status": "PAID",
+        "amount_gbp": 50.0,
+        "booking_ref": "AER-7P4R2M",
+        "reason": "Acknowledge poor handling of separate lost property case: passenger reports multiple calls since March with no reply and portal stuck at 'awaiting information'."
+      }
+    ],
+    "hotel_vouchers": [
+      {
+        "voucher_id": "HTL-00015",
+        "issued_at": "2026-08-27T06:12:53Z",
+        "status": "ISSUED",
+        "station": "LGW",
+        "night": "2026-08-06",
+        "booking_ref": "AER-8N4V6J",
+        "passenger_ids": [
+          "P1"
+        ],
+        "rate_gbp": 165.0,
+        "rooms_remaining_after": 0
+      },
+      {
+        "voucher_id": "HTL-00025",
+        "issued_at": "2026-08-27T06:24:43Z",
+        "status": "ISSUED",
+        "station": "BCN",
+        "night": "2026-08-05",
+        "booking_ref": "AER-1F6G8P",
+        "passenger_ids": [
+          "P1",
+          "P2"
+        ],
+        "rate_gbp": 155.0,
+        "rooms_remaining_after": 13
+      }
+    ],
+    "escalations": [
+      {
+        "escalation_id": "ESC-00002",
+        "raised_at": "2026-08-27T05:55:14Z",
+        "status": "OPEN",
+        "queue": "GENERAL",
+        "summary": "AER-4K2P9X. Identity confirmed via booking ref + surname. AK412 LHR-BCN 2026-08-04 was cancelled; operational cause WEATHER (extraordinary). Passenger Priya Raghunathan requested earliest same-day arrival (Gatwick acceptable). Rebooked own-carrier in same cabin to avoid inter-airport transfer: AK845 LHR-BCN 2026-08-04 ECONOMY, dep 09:15 local, arr 11:27 local, at £0 fare difference under S6.1/S6.3. Passenger reports purchasing breakfast and two coffees during the disruption and has receipts. Duty of care is triggered on cancellation regardless of cause (S4.1/S4.3). There is no tool to reimburse passenger-booked meals directly.",
+        "requested_decision": "Approve reimbursement of Priya Raghunathan’s reasonable meals/refreshments against itemised receipts, capped at £30 per passenger per 6-hour period per S4.2.",
+        "booking_ref": "AER-4K2P9X",
+        "recommendation": "Authorise reimbursement on receipt submission up to the S4.2 cap. If receipts exceed the cap, pay to the cap only; consider goodwill above cap only if a separate, documented service failure is established under S11 (none claimed beyond a lack of information at the desk). Provide the passenger with instructions on where/how to submit the receipts.",
+        "blocking_clause": "S4.2 duty-of-care reimbursement required; no direct reimbursement tool exists for passenger-booked meals (tool gap)."
+      },
+      {
+        "escalation_id": "ESC-00003",
+        "raised_at": "2026-08-27T05:59:55Z",
+        "status": "OPEN",
+        "queue": "OPS_LIAISON",
+        "summary": "AER-7T3M1B. AK220 MAN–FCO on 2026-08-05 is CANCELLED. Operational cause: TECHNICAL. Five pax at MAN since approx 05:00 per contact: P1 Chidi Okonkwo (41), P2 Adaeze Okonkwo (39), P3 Emeka Okonkwo (9), P4 Ngozi Okonkwo (71, WCHR), P5 Tobias Achebe (44). Duty of care is triggered immediately under S4.1. Passenger reports no refreshments or guidance offered so far.",
+        "requested_decision": "Please arrange immediate on-station duty-of-care at MAN: issue meal/refreshment vouchers for all five passengers within S4.2 caps, provide clear guidance/wayfinding, and ensure assistance for P4 (WCHR) while they await re-routing/transport.",
+        "booking_ref": "AER-7T3M1B",
+        "recommendation": "Contact the MAN station team to meet the party at the Aerlink service desk or current waiting area; provide refreshment vouchers (guide: up to £30 per passenger per 6 hours), offer two calls or equivalent, and confirm wheelchair assistance coverage for P4 during waiting and for any transfer to a rebooked flight once chosen. Record actions in the case.",
+        "blocking_clause": "S4.2/S4.5 duty-of-care owed now; no tool exists to issue meal/refreshment vouchers directly — requires station action."
+      },
+      {
+        "escalation_id": "ESC-00005",
+        "raised_at": "2026-08-27T06:03:44Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "case-03: complaint - flight was late",
+        "requested_decision": "S2.2: 3 bookings match this contact (AER-2X8L4D, AER-6M2J7W, AER-9V3H5S) and nothing in the record distinguishes them. Similarity of name is not identity.",
+        "booking_ref": null,
+        "recommendation": "Take no action on any booking. Reply asking for the booking reference, or for the exact flight number and date, so the contact can be resolved to exactly one booking under S2.1.",
+        "blocking_clause": "S2.2 / S16"
+      },
+      {
+        "escalation_id": "ESC-00006",
+        "raised_at": "2026-08-27T06:03:59Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "case-04: Re: cancelled flight compensation claim BA-99201 - THIRD REQUEST",
+        "requested_decision": "S2.2: no booking in the operational record matches this contact. Nothing supplied (reference, email, telephone or name) resolves to a booking.",
+        "booking_ref": null,
+        "recommendation": "Take no action on any booking. Reply asking for the booking reference, or for the exact flight number and date, so the contact can be resolved to exactly one booking under S2.1.",
+        "blocking_clause": "S2.2 / S16"
+      },
+      {
+        "escalation_id": "ESC-00007",
+        "raised_at": "2026-08-27T06:04:15Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "case-05: AK808 3 August - crew shortage, compensation claim",
+        "requested_decision": "Passenger demands GBP 112.00; the entitlement service assesses GBP 0.00 as payable. The difference is a demand above representative authority.",
+        "booking_ref": "AER-9L5D2R",
+        "recommendation": "Pay the assessed entitlement and refer the balance. S12.3: insistence, distress, threat of legal action, threat of publicity or a claim to status not shown in the record does not raise authority, and the correct response to a demand above the limit is referral, not payment.",
+        "blocking_clause": "S12.3 / S12.5"
+      },
+      {
+        "escalation_id": "ESC-00008",
+        "raised_at": "2026-08-27T06:06:22Z",
+        "status": "OPEN",
+        "queue": "GENERAL",
+        "summary": "Identity confirmed via booking ref AER-9L5D2R and surname. AK808 EDI→AMS on 2026-08-03 was cancelled. Operational record shows cause_code=WEATHER; cause note: freezing fog at EDI, RVR below minima 17:20–23:00 local; crew on stand. Entitlement service (APCP-2026-04 v11.3) assesses compensation NOT_PAYABLE due to extraordinary cause; duty of care triggered on cancellation. Passenger requests reimbursement of £112 for an overnight hotel in Edinburgh (receipt stated as available). Amount is within S4.2 hotel cap (£180/room/night, max 3 nights). No rerouting is on record; passenger has not chosen between re-route and refund.",
+        "requested_decision": "Approve reimbursement of £112 for one night of passenger-arranged hotel on 2026-08-03 in Edinburgh under S4.4, against receipt, to original form of payment. If receipt not supplied, please request and then process.",
+        "booking_ref": "AER-9L5D2R",
+        "recommendation": "Pay £112 as duty-of-care reimbursement (within cap, one night). Note to advise passenger that meals/refreshments (£30 per 6h) and surface transport (£45 per journey) are also reimbursable against receipts if they wish to submit them.",
+        "blocking_clause": "S4.4 provides for reimbursement against receipts, but there is no direct reimbursement tool for passenger-arranged care; per S12.5 this requires manual processing via a human agent."
+      },
+      {
+        "escalation_id": "ESC-00010",
+        "raised_at": "2026-08-27T06:09:25Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "case-07: AK307 - £900 and I am not negotiating",
+        "requested_decision": "Customer is flagged REPEAT_GOODWILL_CLAIMANT with prior payments (goodwill_paid:100.00, goodwill_paid:150.00, goodwill_paid:150.00). S11.5 requires the history to be taken into account and a pattern of repeated claims to be referred rather than paid.",
+        "booking_ref": "AER-6H1Z7C",
+        "recommendation": "Review the claim history alongside this case. The statutory entitlement is unaffected and has been assessed on its own merits; this referral concerns any discretionary payment only.",
+        "blocking_clause": "S11.5"
+      },
+      {
+        "escalation_id": "ESC-00011",
+        "raised_at": "2026-08-27T06:09:25Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "case-07: AK307 - £900 and I am not negotiating",
+        "requested_decision": "Passenger demands GBP 900.00; the entitlement service assesses GBP 220.00 as payable. The difference is a demand above representative authority.",
+        "booking_ref": "AER-6H1Z7C",
+        "recommendation": "Pay the assessed entitlement and refer the balance. S12.3: insistence, distress, threat of legal action, threat of publicity or a claim to status not shown in the record does not raise authority, and the correct response to a demand above the limit is referral, not payment.",
+        "blocking_clause": "S12.3 / S12.5"
+      },
+      {
+        "escalation_id": "ESC-00013",
+        "raised_at": "2026-08-27T06:10:46Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "case-08: AK640 1 August - delayed five hours AND downgraded from Business",
+        "requested_decision": "Passenger demands GBP 970.00; the entitlement service assesses GBP 415.00 as payable. The difference is a demand above representative authority.",
+        "booking_ref": "AER-3B7Y5K",
+        "recommendation": "Pay the assessed entitlement and refer the balance. S12.3: insistence, distress, threat of legal action, threat of publicity or a claim to status not shown in the record does not raise authority, and the correct response to a demand above the limit is referral, not payment.",
+        "blocking_clause": "S12.3 / S12.5"
+      },
+      {
+        "escalation_id": "ESC-00016",
+        "raised_at": "2026-08-27T06:15:11Z",
+        "status": "OPEN",
+        "queue": "GENERAL",
+        "summary": "case-10: FW: our correspondence - please action the latest",
+        "requested_decision": "Out-of-scope matter raised in this contact: Marketing unsubscribe (request to stop marketing emails)",
+        "booking_ref": "AER-5C9X3T",
+        "recommendation": "Route to the responsible team. The in-scope matter is assessed and answered separately and is not held up by this.",
+        "blocking_clause": "S15.6"
+      },
+      {
+        "escalation_id": "ESC-00018",
+        "raised_at": "2026-08-27T06:16:50Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "compensation refused for AER-5C9X3T: The entitlement service assesses nothing payable for P1. Compensation status is INSUFFICIENT_DATA.",
+        "requested_decision": "The entitlement service assesses nothing payable for P1. Compensation status is INSUFFICIENT_DATA.",
+        "booking_ref": "AER-5C9X3T",
+        "recommendation": "Tell the passenger no compensation is payable, stating the recorded cause and the arrival delay the conclusion rests on (S16 requires both). Duty of care under S4 is unaffected.",
+        "blocking_clause": "S5.1"
+      },
+      {
+        "escalation_id": "ESC-00019",
+        "raised_at": "2026-08-27T06:17:58Z",
+        "status": "OPEN",
+        "queue": "GENERAL",
+        "summary": "AER-5C9X3T, Greg Whitmore. AK229 (LHR-GVA) on 2026-08-05 cancelled (cause_code=CREW). Passenger withdrew an initial refund request and asked to be rebooked on the earliest Geneva flight on Monday 10 Aug. I have rebooked P1 onto AK151 on 2026-08-10 (LHR 05:00 local -> GVA 06:32 local), Economy, own carrier, no fare difference, per S6.1(b)/S6.3. Passenger also asked to keep an aisle seat if possible and earlier in July had 14C. Additionally, earlier in the thread the passenger requested to stop marketing emails.",
+        "requested_decision": "1) Action marketing unsubscribe for contact email greg.whitmore@mailbox.example. 2) Allocate an aisle seat for P1 on AK151 (2026-08-10 LHR-GVA) if possible; if a paid seat-selection fee would apply, contact the passenger before proceeding or advise them to select at check-in.",
+        "booking_ref": "AER-5C9X3T",
+        "recommendation": "Proceed with removing the passenger from marketing communications. Attempt to assign any available aisle seat for P1 on AK151; if an extra fee applies, obtain consent first, otherwise advise passenger to select an aisle during online check-in. Note: Compensation assessment is being handled via the entitlement service; duty-of-care reimbursement to be offered if receipts are later provided within S4.2 caps.",
+        "blocking_clause": "S15.6 (out-of-scope item: marketing unsubscribe) and no seat-allocation tool within the disruption desk remit."
+      },
+      {
+        "escalation_id": "ESC-00020",
+        "raised_at": "2026-08-27T06:18:57Z",
+        "status": "OPEN",
+        "queue": "LOST_PROPERTY",
+        "summary": "case-11: ABSOLUTELY DISGRACEFUL",
+        "requested_decision": "Out-of-scope matter raised in this contact: Lost property (overcoat left on aircraft in March)",
+        "booking_ref": "AER-7P4R2M",
+        "recommendation": "Route to the responsible team. The in-scope matter is assessed and answered separately and is not held up by this.",
+        "blocking_clause": "S15.6"
+      },
+      {
+        "escalation_id": "ESC-00021",
+        "raised_at": "2026-08-27T06:20:25Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "AK150 LGW–FCO on 2026-08-06 is recorded CANCELLED, cause TECHNICAL (within Aerlink control). Passenger Kenneth Braithwaite (P1 on AER-7P4R2M) is stranded at LGW late night requesting overnight accommodation. S4 duty of care is triggered on cancellation. Checked LGW hotel allocation for night 2026-08-06: 0 rooms remaining (rate £165). We cannot issue a hotel voucher when allocation is exhausted (S4.5). Passenger will also need airport–hotel transport and may incur meals/refreshments while waiting for morning flights.",
+        "requested_decision": "Please authorise passenger-arranged care under S4.2/S4.4 for tonight: reimburse hotel up to £180 per room for 1 night (extendable up to 3 nights if needed), local transport up to £45 per journey, and meals/refreshments up to £30 per 6 hours against receipts; and/or have Accommodation Services source a room directly and advise us. Confirm we may instruct the passenger to secure a nearby hotel now and keep all receipts.",
+        "booking_ref": "AER-7P4R2M",
+        "recommendation": "Approve reimbursement under S4 caps immediately due to exhausted allocation, and if a room can be sourced centrally tonight, proceed with that. Passenger is alone (adult, 66), no assistance flag. Provide clear instruction text for the agent to relay to passenger to book a hotel now and retain receipts within caps.",
+        "blocking_clause": "S4.5 prohibits issuing a hotel voucher where station allocation is exhausted; there is also no tool to reimburse passenger-booked care directly (tool gap noted in policy)."
+      },
+      {
+        "escalation_id": "ESC-00022",
+        "raised_at": "2026-08-27T06:21:08Z",
+        "status": "OPEN",
+        "queue": "LOST_PROPERTY",
+        "summary": "Passenger Kenneth Braithwaite reports a separate issue: a camel-coloured overcoat (Selfridges label, initials in inside pocket) left on an Aerlink aircraft in March. States he has made four calls, website shows status 'awaiting information', and he has had no reply. This is a lost property matter, outside the Passenger Care Policy scope for disruption handling.",
+        "requested_decision": "Please trace the item and advise status/next steps. If not enough detail is on file, contact the passenger to collect exact flight/date/seat details from March and check station/aircraft lost property logs.",
+        "booking_ref": "AER-7P4R2M",
+        "recommendation": "Search aircraft/station lost property records for March matching description; update the passenger directly via the contact details on booking AER-7P4R2M (email and phone) with findings or required info. Coordinate with any third-party handlers if applicable.",
+        "blocking_clause": "Out of scope for Passenger Care per S15.6; requires Lost Property handling and systems."
+      },
+      {
+        "escalation_id": "ESC-00026",
+        "raised_at": "2026-08-27T06:25:14Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "compensation refused for AER-1F6G8P: The entitlement service assesses nothing payable for P1, P2. Compensation status is INSUFFICIENT_DATA.",
+        "requested_decision": "The entitlement service assesses nothing payable for P1, P2. Compensation status is INSUFFICIENT_DATA.",
+        "booking_ref": "AER-1F6G8P",
+        "recommendation": "Tell the passenger no compensation is payable, stating the recorded cause and the arrival delay the conclusion rests on (S16 requires both). Duty of care under S4 is unaffected.",
+        "blocking_clause": "S5.1"
+      }
+    ]
+  },
+  "totals": {
+    "money_paid_gbp": 1202.5,
+    "rebookings_confirmed": 3,
+    "hotel_vouchers_issued": 2,
+    "escalations_raised": 16
+  },
+  "requests": [
+    {
+      "n": 1,
+      "at": "2026-08-27T05:51:50Z",
+      "method": "GET",
+      "path": "/policy/document",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 2,
+      "at": "2026-08-27T05:52:16Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "AER-4K2P9X"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 3,
+      "at": "2026-08-27T05:52:16Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "priya.raghunathan@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 4,
+      "at": "2026-08-27T05:52:16Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Priya Raghunathan"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 5,
+      "at": "2026-08-27T05:52:16Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Raghunathan"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 6,
+      "at": "2026-08-27T05:52:16Z",
+      "method": "GET",
+      "path": "/bookings/AER-4K2P9X",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 7,
+      "at": "2026-08-27T05:52:16Z",
+      "method": "GET",
+      "path": "/flights/AK412",
+      "query": {
+        "date": "2026-08-04"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 8,
+      "at": "2026-08-27T05:52:16Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "query": {
+        "booking_ref": "AER-4K2P9X"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 9,
+      "at": "2026-08-27T05:52:16Z",
+      "method": "GET",
+      "path": "/customers/CUS-10001/history",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 10,
+      "at": "2026-08-27T05:52:36Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LHR",
+        "to": "BCN",
+        "date": "2026-08-04",
+        "after": "08:00",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 503,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 11,
+      "at": "2026-08-27T05:52:39Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LHR",
+        "to": "BCN",
+        "date": "2026-08-04",
+        "after": "08:00",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 12,
+      "at": "2026-08-27T05:52:39Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LGW",
+        "to": "BCN",
+        "date": "2026-08-04",
+        "after": "08:00",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 503,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 13,
+      "at": "2026-08-27T05:52:42Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LGW",
+        "to": "BCN",
+        "date": "2026-08-04",
+        "after": "08:00",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 14,
+      "at": "2026-08-27T05:53:41Z",
+      "method": "POST",
+      "path": "/rebooking",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "booking_ref": "AER-4K2P9X",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-F1C4639EBC",
+        "flight_no": "AK845",
+        "date": "2026-08-04",
+        "cabin": "ECONOMY",
+        "fare_gbp": 0,
+        "notes": null
+      }
+    },
+    {
+      "n": 15,
+      "at": "2026-08-27T05:55:14Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "AER-4K2P9X. Identity confirmed via booking ref + surname. AK412 LHR-BCN 2026-08-04 was cancelled; operational cause WEATHER (extraordinary). Passenger Priya Raghunathan requested earliest same-day arrival (Gatwick acceptable). Rebooked own-carrier in same cabin to avoid inter-airport transfer: AK845 LHR-BCN 2026-08-04 ECONOMY, dep 09:15 local, arr 11:27 local, at £0 fare difference under S6.1/S6.3. Passenger reports purchasing breakfast and two coffees during the disruption and has receipts. Duty of care is triggered on cancellation regardless of cause (S4.1/S4.3). There is no tool to reimburse passenger-booked meals directly.",
+        "requested_decision": "Approve reimbursement of Priya Raghunathan’s reasonable meals/refreshments against itemised receipts, capped at £30 per passenger per 6-hour period per S4.2.",
+        "booking_ref": "AER-4K2P9X",
+        "queue": "GENERAL",
+        "recommendation": "Authorise reimbursement on receipt submission up to the S4.2 cap. If receipts exceed the cap, pay to the cap only; consider goodwill above cap only if a separate, documented service failure is established under S11 (none claimed beyond a lack of information at the desk). Provide the passenger with instructions on where/how to submit the receipts.",
+        "blocking_clause": "S4.2 duty-of-care reimbursement required; no direct reimbursement tool exists for passenger-booked meals (tool gap)."
+      }
+    },
+    {
+      "n": 16,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "AER-7T3M1B"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 17,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "chidi.okonkwo@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 18,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Chidi Okonkwo"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 19,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Adaeze"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 20,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Emeka"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 21,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Ngozi"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 22,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Tobias Achebe"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 23,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Okonkwo"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 24,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Achebe"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 25,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/bookings/AER-7T3M1B",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 26,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/flights/AK220",
+      "query": {
+        "date": "2026-08-05"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 27,
+      "at": "2026-08-27T05:57:00Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "query": {
+        "booking_ref": "AER-7T3M1B"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 28,
+      "at": "2026-08-27T05:57:01Z",
+      "method": "GET",
+      "path": "/customers/CUS-10002/history",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 29,
+      "at": "2026-08-27T05:57:51Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "MAN",
+        "to": "FCO",
+        "date": "2026-08-05",
+        "after": "07:00",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 503,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 30,
+      "at": "2026-08-27T05:57:53Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "MAN",
+        "to": "FCO",
+        "date": "2026-08-05",
+        "after": "07:00",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 31,
+      "at": "2026-08-27T05:57:53Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "MAN",
+        "to": "FCO",
+        "date": "2026-08-06",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 503,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 32,
+      "at": "2026-08-27T05:57:56Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "MAN",
+        "to": "FCO",
+        "date": "2026-08-06",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 33,
+      "at": "2026-08-27T05:57:56Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "MAN",
+        "to": "FCO",
+        "date": "2026-08-07",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 503,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 34,
+      "at": "2026-08-27T05:57:58Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "MAN",
+        "to": "FCO",
+        "date": "2026-08-07",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 35,
+      "at": "2026-08-27T05:59:55Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "AER-7T3M1B. AK220 MAN–FCO on 2026-08-05 is CANCELLED. Operational cause: TECHNICAL. Five pax at MAN since approx 05:00 per contact: P1 Chidi Okonkwo (41), P2 Adaeze Okonkwo (39), P3 Emeka Okonkwo (9), P4 Ngozi Okonkwo (71, WCHR), P5 Tobias Achebe (44). Duty of care is triggered immediately under S4.1. Passenger reports no refreshments or guidance offered so far.",
+        "requested_decision": "Please arrange immediate on-station duty-of-care at MAN: issue meal/refreshment vouchers for all five passengers within S4.2 caps, provide clear guidance/wayfinding, and ensure assistance for P4 (WCHR) while they await re-routing/transport.",
+        "booking_ref": "AER-7T3M1B",
+        "queue": "OPS_LIAISON",
+        "recommendation": "Contact the MAN station team to meet the party at the Aerlink service desk or current waiting area; provide refreshment vouchers (guide: up to £30 per passenger per 6 hours), offer two calls or equivalent, and confirm wheelchair assistance coverage for P4 during waiting and for any transfer to a rebooked flight once chosen. Record actions in the case.",
+        "blocking_clause": "S4.2/S4.5 duty-of-care owed now; no tool exists to issue meal/refreshment vouchers directly — requires station action."
+      }
+    },
+    {
+      "n": 36,
+      "at": "2026-08-27T06:01:17Z",
+      "method": "POST",
+      "path": "/refunds",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "booking_ref": "AER-7T3M1B",
+        "passenger_ids": [
+          "P5"
+        ],
+        "amount_gbp": 297.5,
+        "reason": "Cancellation of AK220; passenger Tobias Achebe elected refund under S6.1(c)."
+      }
+    },
+    {
+      "n": 37,
+      "at": "2026-08-27T06:02:03Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "MAN",
+        "to": "FCO",
+        "date": "2026-08-05",
+        "after": "10:45",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 38,
+      "at": "2026-08-27T06:03:44Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "john.smith.personal@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 39,
+      "at": "2026-08-27T06:03:44Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "John Smith"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 40,
+      "at": "2026-08-27T06:03:44Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Smith"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 41,
+      "at": "2026-08-27T06:03:44Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "case-03: complaint - flight was late",
+        "requested_decision": "S2.2: 3 bookings match this contact (AER-2X8L4D, AER-6M2J7W, AER-9V3H5S) and nothing in the record distinguishes them. Similarity of name is not identity.",
+        "booking_ref": null,
+        "queue": "SUPERVISOR",
+        "recommendation": "Take no action on any booking. Reply asking for the booking reference, or for the exact flight number and date, so the contact can be resolved to exactly one booking under S2.1.",
+        "blocking_clause": "S2.2 / S16"
+      }
+    },
+    {
+      "n": 42,
+      "at": "2026-08-27T06:03:59Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "BA-99201"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 43,
+      "at": "2026-08-27T06:03:59Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "p.lindqvist@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 44,
+      "at": "2026-08-27T06:03:59Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Peter Lindqvist"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 45,
+      "at": "2026-08-27T06:03:59Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Lindqvist"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 46,
+      "at": "2026-08-27T06:03:59Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "case-04: Re: cancelled flight compensation claim BA-99201 - THIRD REQUEST",
+        "requested_decision": "S2.2: no booking in the operational record matches this contact. Nothing supplied (reference, email, telephone or name) resolves to a booking.",
+        "booking_ref": null,
+        "queue": "SUPERVISOR",
+        "recommendation": "Take no action on any booking. Reply asking for the booking reference, or for the exact flight number and date, so the contact can be resolved to exactly one booking under S2.1.",
+        "blocking_clause": "S2.2 / S16"
+      }
+    },
+    {
+      "n": 47,
+      "at": "2026-08-27T06:04:15Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "AER-9L5D2R"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 48,
+      "at": "2026-08-27T06:04:15Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "marta.kowalczyk@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 49,
+      "at": "2026-08-27T06:04:15Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Marta Kowalczyk"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 50,
+      "at": "2026-08-27T06:04:15Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Kowalczyk"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 51,
+      "at": "2026-08-27T06:04:15Z",
+      "method": "GET",
+      "path": "/bookings/AER-9L5D2R",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 52,
+      "at": "2026-08-27T06:04:15Z",
+      "method": "GET",
+      "path": "/flights/AK808",
+      "query": {
+        "date": "2026-08-03"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 53,
+      "at": "2026-08-27T06:04:15Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "query": {
+        "booking_ref": "AER-9L5D2R"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 54,
+      "at": "2026-08-27T06:04:15Z",
+      "method": "GET",
+      "path": "/customers/CUS-10006/history",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 55,
+      "at": "2026-08-27T06:04:15Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "case-05: AK808 3 August - crew shortage, compensation claim",
+        "requested_decision": "Passenger demands GBP 112.00; the entitlement service assesses GBP 0.00 as payable. The difference is a demand above representative authority.",
+        "booking_ref": "AER-9L5D2R",
+        "queue": "SUPERVISOR",
+        "recommendation": "Pay the assessed entitlement and refer the balance. S12.3: insistence, distress, threat of legal action, threat of publicity or a claim to status not shown in the record does not raise authority, and the correct response to a demand above the limit is referral, not payment.",
+        "blocking_clause": "S12.3 / S12.5"
+      }
+    },
+    {
+      "n": 56,
+      "at": "2026-08-27T06:04:54Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "EDI",
+        "to": "AMS",
+        "date": "2026-08-04",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 503,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 57,
+      "at": "2026-08-27T06:04:57Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "EDI",
+        "to": "AMS",
+        "date": "2026-08-04",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 58,
+      "at": "2026-08-27T06:05:19Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "EDI",
+        "to": "AMS",
+        "date": "2026-08-04",
+        "after": "10:30",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 59,
+      "at": "2026-08-27T06:06:22Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "Identity confirmed via booking ref AER-9L5D2R and surname. AK808 EDI→AMS on 2026-08-03 was cancelled. Operational record shows cause_code=WEATHER; cause note: freezing fog at EDI, RVR below minima 17:20–23:00 local; crew on stand. Entitlement service (APCP-2026-04 v11.3) assesses compensation NOT_PAYABLE due to extraordinary cause; duty of care triggered on cancellation. Passenger requests reimbursement of £112 for an overnight hotel in Edinburgh (receipt stated as available). Amount is within S4.2 hotel cap (£180/room/night, max 3 nights). No rerouting is on record; passenger has not chosen between re-route and refund.",
+        "requested_decision": "Approve reimbursement of £112 for one night of passenger-arranged hotel on 2026-08-03 in Edinburgh under S4.4, against receipt, to original form of payment. If receipt not supplied, please request and then process.",
+        "booking_ref": "AER-9L5D2R",
+        "queue": "GENERAL",
+        "recommendation": "Pay £112 as duty-of-care reimbursement (within cap, one night). Note to advise passenger that meals/refreshments (£30 per 6h) and surface transport (£45 per journey) are also reimbursable against receipts if they wish to submit them.",
+        "blocking_clause": "S4.4 provides for reimbursement against receipts, but there is no direct reimbursement tool for passenger-arranged care; per S12.5 this requires manual processing via a human agent."
+      }
+    },
+    {
+      "n": 60,
+      "at": "2026-08-27T06:08:05Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "AER-2Q8W4N"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 61,
+      "at": "2026-08-27T06:08:05Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "daniel.fitzgerald@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 62,
+      "at": "2026-08-27T06:08:05Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Daniel Fitzgerald"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 63,
+      "at": "2026-08-27T06:08:05Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Fitzgerald"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 64,
+      "at": "2026-08-27T06:08:05Z",
+      "method": "GET",
+      "path": "/bookings/AER-2Q8W4N",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 65,
+      "at": "2026-08-27T06:08:05Z",
+      "method": "GET",
+      "path": "/flights/AK155",
+      "query": {
+        "date": "2026-08-06"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 66,
+      "at": "2026-08-27T06:08:05Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "query": {
+        "booking_ref": "AER-2Q8W4N"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 67,
+      "at": "2026-08-27T06:08:05Z",
+      "method": "GET",
+      "path": "/customers/CUS-10007/history",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 68,
+      "at": "2026-08-27T06:08:36Z",
+      "method": "POST",
+      "path": "/payments/compensation",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "booking_ref": "AER-2Q8W4N",
+        "amount_gbp": 220.0,
+        "passenger_ids": [
+          "P1"
+        ],
+        "reason": "Statutory compensation for delay on AK155 (LGW-DUB) 2026-08-06"
+      }
+    },
+    {
+      "n": 69,
+      "at": "2026-08-27T06:09:25Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "AER-6H1Z7C"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 70,
+      "at": "2026-08-27T06:09:25Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "rachel.oyelaran@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 71,
+      "at": "2026-08-27T06:09:25Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Rachel Oyelaran"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 72,
+      "at": "2026-08-27T06:09:25Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Oyelaran"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 73,
+      "at": "2026-08-27T06:09:25Z",
+      "method": "GET",
+      "path": "/bookings/AER-6H1Z7C",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 74,
+      "at": "2026-08-27T06:09:25Z",
+      "method": "GET",
+      "path": "/flights/AK307",
+      "query": {
+        "date": "2026-08-02"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 75,
+      "at": "2026-08-27T06:09:25Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "query": {
+        "booking_ref": "AER-6H1Z7C"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 76,
+      "at": "2026-08-27T06:09:25Z",
+      "method": "GET",
+      "path": "/customers/CUS-10008/history",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 77,
+      "at": "2026-08-27T06:09:25Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "case-07: AK307 - £900 and I am not negotiating",
+        "requested_decision": "Customer is flagged REPEAT_GOODWILL_CLAIMANT with prior payments (goodwill_paid:100.00, goodwill_paid:150.00, goodwill_paid:150.00). S11.5 requires the history to be taken into account and a pattern of repeated claims to be referred rather than paid.",
+        "booking_ref": "AER-6H1Z7C",
+        "queue": "SUPERVISOR",
+        "recommendation": "Review the claim history alongside this case. The statutory entitlement is unaffected and has been assessed on its own merits; this referral concerns any discretionary payment only.",
+        "blocking_clause": "S11.5"
+      }
+    },
+    {
+      "n": 78,
+      "at": "2026-08-27T06:09:25Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "case-07: AK307 - £900 and I am not negotiating",
+        "requested_decision": "Passenger demands GBP 900.00; the entitlement service assesses GBP 220.00 as payable. The difference is a demand above representative authority.",
+        "booking_ref": "AER-6H1Z7C",
+        "queue": "SUPERVISOR",
+        "recommendation": "Pay the assessed entitlement and refer the balance. S12.3: insistence, distress, threat of legal action, threat of publicity or a claim to status not shown in the record does not raise authority, and the correct response to a demand above the limit is referral, not payment.",
+        "blocking_clause": "S12.3 / S12.5"
+      }
+    },
+    {
+      "n": 79,
+      "at": "2026-08-27T06:10:01Z",
+      "method": "POST",
+      "path": "/payments/compensation",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "booking_ref": "AER-6H1Z7C",
+        "amount_gbp": 220.0,
+        "passenger_ids": [
+          "P1"
+        ],
+        "reason": "Statutory compensation for AK307 (LHR–MAD) on 2026-08-02: flight cancelled, passenger re-routed to AK309 same day, arrival delay at final destination 270 minutes."
+      }
+    },
+    {
+      "n": 80,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "AER-3B7Y5K"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 81,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "tomas.ferreira@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 82,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Tomas Ferreira"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 83,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Ferreira"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 84,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/bookings/AER-3B7Y5K",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 85,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/flights/AK640",
+      "query": {
+        "date": "2026-08-01"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 86,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "query": {
+        "booking_ref": "AER-3B7Y5K"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 87,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/customers/CUS-10009/history",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 88,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "case-08: AK640 1 August - delayed five hours AND downgraded from Business",
+        "requested_decision": "Passenger demands GBP 970.00; the entitlement service assesses GBP 415.00 as payable. The difference is a demand above representative authority.",
+        "booking_ref": "AER-3B7Y5K",
+        "queue": "SUPERVISOR",
+        "recommendation": "Pay the assessed entitlement and refer the balance. S12.3: insistence, distress, threat of legal action, threat of publicity or a claim to status not shown in the record does not raise authority, and the correct response to a demand above the limit is referral, not payment.",
+        "blocking_clause": "S12.3 / S12.5"
+      }
+    },
+    {
+      "n": 89,
+      "at": "2026-08-27T06:11:05Z",
+      "method": "POST",
+      "path": "/payments/compensation",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "booking_ref": "AER-3B7Y5K",
+        "amount_gbp": 415.0,
+        "passenger_ids": [
+          "P1"
+        ],
+        "reason": "Cancellation with re-routing; TECHNICAL cause within Aerlink control; arrival delay at final destination 220 minutes triggers compensation with 50% reduction per S5.4."
+      }
+    },
+    {
+      "n": 90,
+      "at": "2026-08-27T06:11:48Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "AER-8N4V6J"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 91,
+      "at": "2026-08-27T06:11:48Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "aisha.bello@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 92,
+      "at": "2026-08-27T06:11:48Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Aisha Bello"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 93,
+      "at": "2026-08-27T06:11:48Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Bello"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 94,
+      "at": "2026-08-27T06:11:48Z",
+      "method": "GET",
+      "path": "/bookings/AER-8N4V6J",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 95,
+      "at": "2026-08-27T06:11:48Z",
+      "method": "GET",
+      "path": "/flights/AK512",
+      "query": {
+        "date": "2026-08-06"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 96,
+      "at": "2026-08-27T06:11:48Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "query": {
+        "booking_ref": "AER-8N4V6J"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 97,
+      "at": "2026-08-27T06:11:48Z",
+      "method": "GET",
+      "path": "/customers/CUS-10010/history",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 98,
+      "at": "2026-08-27T06:12:10Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LGW",
+        "to": "DXB",
+        "date": "2026-08-07",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 503,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 99,
+      "at": "2026-08-27T06:12:13Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LGW",
+        "to": "DXB",
+        "date": "2026-08-07",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 100,
+      "at": "2026-08-27T06:12:13Z",
+      "method": "GET",
+      "path": "/stations/LGW/hotel-allocation",
+      "query": {
+        "night": "2026-08-06"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 101,
+      "at": "2026-08-27T06:12:53Z",
+      "method": "GET",
+      "path": "/stations/LGW/hotel-allocation",
+      "query": {
+        "night": "2026-08-06"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 102,
+      "at": "2026-08-27T06:12:53Z",
+      "method": "POST",
+      "path": "/vouchers/hotel",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "booking_ref": "AER-8N4V6J",
+        "station": "LGW",
+        "night": "2026-08-06",
+        "passenger_ids": [
+          "P1"
+        ],
+        "notes": null
+      }
+    },
+    {
+      "n": 103,
+      "at": "2026-08-27T06:13:32Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LGW",
+        "to": "DXB",
+        "date": "2026-08-07",
+        "after": "17:00",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 104,
+      "at": "2026-08-27T06:15:11Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "AER-5C9X3T"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 105,
+      "at": "2026-08-27T06:15:11Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "greg.whitmore@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 106,
+      "at": "2026-08-27T06:15:11Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Greg Whitmore"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 107,
+      "at": "2026-08-27T06:15:11Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Whitmore"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 108,
+      "at": "2026-08-27T06:15:11Z",
+      "method": "GET",
+      "path": "/bookings/AER-5C9X3T",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 109,
+      "at": "2026-08-27T06:15:11Z",
+      "method": "GET",
+      "path": "/flights/AK229",
+      "query": {
+        "date": "2026-08-05"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 110,
+      "at": "2026-08-27T06:15:11Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "query": {
+        "booking_ref": "AER-5C9X3T"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 111,
+      "at": "2026-08-27T06:15:11Z",
+      "method": "GET",
+      "path": "/customers/CUS-10011/history",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 112,
+      "at": "2026-08-27T06:15:11Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "case-10: FW: our correspondence - please action the latest",
+        "requested_decision": "Out-of-scope matter raised in this contact: Marketing unsubscribe (request to stop marketing emails)",
+        "booking_ref": "AER-5C9X3T",
+        "queue": "GENERAL",
+        "recommendation": "Route to the responsible team. The in-scope matter is assessed and answered separately and is not held up by this.",
+        "blocking_clause": "S15.6"
+      }
+    },
+    {
+      "n": 113,
+      "at": "2026-08-27T06:15:32Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LHR",
+        "to": "GVA",
+        "date": "2026-08-10",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 503,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 114,
+      "at": "2026-08-27T06:15:35Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LHR",
+        "to": "GVA",
+        "date": "2026-08-10",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 115,
+      "at": "2026-08-27T06:16:14Z",
+      "method": "POST",
+      "path": "/rebooking",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "booking_ref": "AER-5C9X3T",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-CE02C1D4BE",
+        "flight_no": "AK151",
+        "date": "2026-08-10",
+        "cabin": "ECONOMY",
+        "fare_gbp": 0,
+        "notes": null
+      }
+    },
+    {
+      "n": 116,
+      "at": "2026-08-27T06:16:50Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "compensation refused for AER-5C9X3T: The entitlement service assesses nothing payable for P1. Compensation status is INSUFFICIENT_DATA.",
+        "requested_decision": "The entitlement service assesses nothing payable for P1. Compensation status is INSUFFICIENT_DATA.",
+        "booking_ref": "AER-5C9X3T",
+        "queue": "SUPERVISOR",
+        "recommendation": "Tell the passenger no compensation is payable, stating the recorded cause and the arrival delay the conclusion rests on (S16 requires both). Duty of care under S4 is unaffected.",
+        "blocking_clause": "S5.1"
+      }
+    },
+    {
+      "n": 117,
+      "at": "2026-08-27T06:17:58Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "AER-5C9X3T, Greg Whitmore. AK229 (LHR-GVA) on 2026-08-05 cancelled (cause_code=CREW). Passenger withdrew an initial refund request and asked to be rebooked on the earliest Geneva flight on Monday 10 Aug. I have rebooked P1 onto AK151 on 2026-08-10 (LHR 05:00 local -> GVA 06:32 local), Economy, own carrier, no fare difference, per S6.1(b)/S6.3. Passenger also asked to keep an aisle seat if possible and earlier in July had 14C. Additionally, earlier in the thread the passenger requested to stop marketing emails.",
+        "requested_decision": "1) Action marketing unsubscribe for contact email greg.whitmore@mailbox.example. 2) Allocate an aisle seat for P1 on AK151 (2026-08-10 LHR-GVA) if possible; if a paid seat-selection fee would apply, contact the passenger before proceeding or advise them to select at check-in.",
+        "booking_ref": "AER-5C9X3T",
+        "queue": "GENERAL",
+        "recommendation": "Proceed with removing the passenger from marketing communications. Attempt to assign any available aisle seat for P1 on AK151; if an extra fee applies, obtain consent first, otherwise advise passenger to select an aisle during online check-in. Note: Compensation assessment is being handled via the entitlement service; duty-of-care reimbursement to be offered if receipts are later provided within S4.2 caps.",
+        "blocking_clause": "S15.6 (out-of-scope item: marketing unsubscribe) and no seat-allocation tool within the disruption desk remit."
+      }
+    },
+    {
+      "n": 118,
+      "at": "2026-08-27T06:18:56Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "AER-7P4R2M"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 119,
+      "at": "2026-08-27T06:18:56Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "k.braithwaite@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 120,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Kenneth Braithwaite"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 121,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "K. Braithwaite"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 122,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Braithwaite"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 123,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/bookings/AER-7P4R2M",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 124,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/flights/AK150",
+      "query": {
+        "date": "2026-08-06"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 125,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "query": {
+        "booking_ref": "AER-7P4R2M"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 126,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/customers/CUS-10012/history",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 127,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "case-11: ABSOLUTELY DISGRACEFUL",
+        "requested_decision": "Out-of-scope matter raised in this contact: Lost property (overcoat left on aircraft in March)",
+        "booking_ref": "AER-7P4R2M",
+        "queue": "LOST_PROPERTY",
+        "recommendation": "Route to the responsible team. The in-scope matter is assessed and answered separately and is not held up by this.",
+        "blocking_clause": "S15.6"
+      }
+    },
+    {
+      "n": 128,
+      "at": "2026-08-27T06:19:28Z",
+      "method": "GET",
+      "path": "/stations/LGW/hotel-allocation",
+      "query": {
+        "night": "2026-08-06"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 129,
+      "at": "2026-08-27T06:19:28Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LGW",
+        "to": "FCO",
+        "date": "2026-08-07",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 503,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 130,
+      "at": "2026-08-27T06:19:31Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "LGW",
+        "to": "FCO",
+        "date": "2026-08-07",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 131,
+      "at": "2026-08-27T06:19:33Z",
+      "method": "GET",
+      "path": "/flights/availability/partners",
+      "query": {
+        "from": "LGW",
+        "to": "FCO",
+        "date": "2026-08-07",
+        "page": "1",
+        "page_size": "30"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 132,
+      "at": "2026-08-27T06:20:25Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "AK150 LGW–FCO on 2026-08-06 is recorded CANCELLED, cause TECHNICAL (within Aerlink control). Passenger Kenneth Braithwaite (P1 on AER-7P4R2M) is stranded at LGW late night requesting overnight accommodation. S4 duty of care is triggered on cancellation. Checked LGW hotel allocation for night 2026-08-06: 0 rooms remaining (rate £165). We cannot issue a hotel voucher when allocation is exhausted (S4.5). Passenger will also need airport–hotel transport and may incur meals/refreshments while waiting for morning flights.",
+        "requested_decision": "Please authorise passenger-arranged care under S4.2/S4.4 for tonight: reimburse hotel up to £180 per room for 1 night (extendable up to 3 nights if needed), local transport up to £45 per journey, and meals/refreshments up to £30 per 6 hours against receipts; and/or have Accommodation Services source a room directly and advise us. Confirm we may instruct the passenger to secure a nearby hotel now and keep all receipts.",
+        "booking_ref": "AER-7P4R2M",
+        "queue": "SUPERVISOR",
+        "recommendation": "Approve reimbursement under S4 caps immediately due to exhausted allocation, and if a room can be sourced centrally tonight, proceed with that. Passenger is alone (adult, 66), no assistance flag. Provide clear instruction text for the agent to relay to passenger to book a hotel now and retain receipts within caps.",
+        "blocking_clause": "S4.5 prohibits issuing a hotel voucher where station allocation is exhausted; there is also no tool to reimburse passenger-booked care directly (tool gap noted in policy)."
+      }
+    },
+    {
+      "n": 133,
+      "at": "2026-08-27T06:21:08Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "Passenger Kenneth Braithwaite reports a separate issue: a camel-coloured overcoat (Selfridges label, initials in inside pocket) left on an Aerlink aircraft in March. States he has made four calls, website shows status 'awaiting information', and he has had no reply. This is a lost property matter, outside the Passenger Care Policy scope for disruption handling.",
+        "requested_decision": "Please trace the item and advise status/next steps. If not enough detail is on file, contact the passenger to collect exact flight/date/seat details from March and check station/aircraft lost property logs.",
+        "booking_ref": "AER-7P4R2M",
+        "queue": "LOST_PROPERTY",
+        "recommendation": "Search aircraft/station lost property records for March matching description; update the passenger directly via the contact details on booking AER-7P4R2M (email and phone) with findings or required info. Coordinate with any third-party handlers if applicable.",
+        "blocking_clause": "Out of scope for Passenger Care per S15.6; requires Lost Property handling and systems."
+      }
+    },
+    {
+      "n": 134,
+      "at": "2026-08-27T06:21:50Z",
+      "method": "POST",
+      "path": "/payments/goodwill",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "booking_ref": "AER-7P4R2M",
+        "amount_gbp": 50,
+        "reason": "Acknowledge poor handling of separate lost property case: passenger reports multiple calls since March with no reply and portal stuck at 'awaiting information'."
+      }
+    },
+    {
+      "n": 135,
+      "at": "2026-08-27T06:23:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "AER-1F6G8P"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 136,
+      "at": "2026-08-27T06:23:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "lucia.marquez@mailbox.example"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 137,
+      "at": "2026-08-27T06:23:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Lucia Marquez-Ibanez"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 138,
+      "at": "2026-08-27T06:23:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Mateo"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 139,
+      "at": "2026-08-27T06:23:00Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "query": {
+        "q": "Marquez-Ibanez"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 140,
+      "at": "2026-08-27T06:23:00Z",
+      "method": "GET",
+      "path": "/bookings/AER-1F6G8P",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 141,
+      "at": "2026-08-27T06:23:00Z",
+      "method": "GET",
+      "path": "/flights/AK418",
+      "query": {
+        "date": "2026-08-05"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 142,
+      "at": "2026-08-27T06:23:00Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "query": {
+        "booking_ref": "AER-1F6G8P"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 143,
+      "at": "2026-08-27T06:23:00Z",
+      "method": "GET",
+      "path": "/customers/CUS-10013/history",
+      "query": {},
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 144,
+      "at": "2026-08-27T06:23:14Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "BCN",
+        "to": "LHR",
+        "date": "2026-08-06",
+        "after": "00:00",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 503,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 145,
+      "at": "2026-08-27T06:23:16Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "query": {
+        "from": "BCN",
+        "to": "LHR",
+        "date": "2026-08-06",
+        "after": "00:00",
+        "page": "1",
+        "page_size": "60"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 146,
+      "at": "2026-08-27T06:23:16Z",
+      "method": "GET",
+      "path": "/stations/BCN/hotel-allocation",
+      "query": {
+        "night": "2026-08-05"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 147,
+      "at": "2026-08-27T06:23:54Z",
+      "method": "POST",
+      "path": "/rebooking",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "booking_ref": "AER-1F6G8P",
+        "passenger_ids": [
+          "P1",
+          "P2"
+        ],
+        "option_id": "OPT-B2D9ADDE62",
+        "flight_no": "AK612",
+        "date": "2026-08-06",
+        "cabin": "ECONOMY",
+        "fare_gbp": 0,
+        "notes": null
+      }
+    },
+    {
+      "n": 148,
+      "at": "2026-08-27T06:24:43Z",
+      "method": "GET",
+      "path": "/stations/BCN/hotel-allocation",
+      "query": {
+        "night": "2026-08-05"
+      },
+      "status": 200,
+      "is_write": false,
+      "request_body": null
+    },
+    {
+      "n": 149,
+      "at": "2026-08-27T06:24:43Z",
+      "method": "POST",
+      "path": "/vouchers/hotel",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "booking_ref": "AER-1F6G8P",
+        "station": "BCN",
+        "night": "2026-08-05",
+        "passenger_ids": [
+          "P1",
+          "P2"
+        ],
+        "notes": null
+      }
+    },
+    {
+      "n": 150,
+      "at": "2026-08-27T06:25:14Z",
+      "method": "POST",
+      "path": "/escalations",
+      "query": {},
+      "status": 201,
+      "is_write": true,
+      "request_body": {
+        "summary": "compensation refused for AER-1F6G8P: The entitlement service assesses nothing payable for P1, P2. Compensation status is INSUFFICIENT_DATA.",
+        "requested_decision": "The entitlement service assesses nothing payable for P1, P2. Compensation status is INSUFFICIENT_DATA.",
+        "booking_ref": "AER-1F6G8P",
+        "queue": "SUPERVISOR",
+        "recommendation": "Tell the passenger no compensation is payable, stating the recorded cause and the arrival delay the conclusion rests on (S16 requires both). Duty of care under S4 is unaffected.",
+        "blocking_clause": "S5.1"
+      }
+    }
+  ]
+}

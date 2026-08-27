@@ -1,0 +1,41 @@
+[
+  {
+    "kind": "rebooking",
+    "args": {
+      "passenger_ids": [
+        "P1",
+        "P2"
+      ],
+      "option_id": "OPT-B2D9ADDE62",
+      "flight_no": "AK612",
+      "date": "2026-08-06",
+      "cabin": "ECONOMY",
+      "fare_gbp": 0,
+      "operated_by": "Aerlink"
+    },
+    "rationale": "Passenger explicitly asked for the earliest tomorrow morning (S6.1). Own-carrier, same cabin, no additional cost to the passenger (S6.3). Selected earliest option with 2 seats available."
+  },
+  {
+    "kind": "hotel_voucher",
+    "args": {
+      "station": "BCN",
+      "night": "2026-08-05",
+      "passenger_ids": [
+        "P1",
+        "P2"
+      ]
+    },
+    "rationale": "S4.1: Flight cancelled, overnight stay became necessary. S4.5: BCN allocation checked (rooms remaining) and within \u00a3180/night cap. Providing one room covering both passengers."
+  },
+  {
+    "kind": "compensation",
+    "args": {
+      "passenger_ids": [
+        "P1",
+        "P2"
+      ],
+      "reason": "Cancellation with cause within Aerlink control; re-routed arrival delay exceeds 3 hours."
+    },
+    "rationale": "S5.1: cancellation + cause TECHNICAL (within control) + informed <14 days + arrival delay at final destination >=3h. S10.2: amount per passenger to be assessed and paid by the entitlement service."
+  }
+]

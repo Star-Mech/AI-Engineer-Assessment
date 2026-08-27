@@ -1,0 +1,58 @@
+{
+  "sender_name": "Rachel Oyelaran",
+  "sender_email": "rachel.oyelaran@mailbox.example",
+  "sender_phone": null,
+  "claimed_booking_refs": [
+    "AER-6H1Z7C"
+  ],
+  "claimed_flights": [
+    {
+      "flight_no": "AK307",
+      "date": "2026-08-02",
+      "route_hint": "to Madrid"
+    }
+  ],
+  "named_passengers_mentioned": [
+    "Rachel Oyelaran"
+  ],
+  "thread": [
+    {
+      "seq": 1,
+      "sent_at": "2026-08-04T09:22:40+01:00",
+      "party": "PASSENGER",
+      "gist": "Booking AER-6H1Z7C. Flight AK307 to Madrid on 2 Aug was cancelled; rebooked onto a later service and arrived 4.5 hours late. Demands £900 paid to the card used for booking this week; threatens ombudsman, solicitor and publicising correspondence.",
+      "is_instruction_block": false
+    }
+  ],
+  "requests": [
+    {
+      "beneficiary": "Rachel Oyelaran",
+      "ask": "Payment of £900 to the card used for booking, to be paid this week.",
+      "superseded": false
+    }
+  ],
+  "most_recent_intention": "Payment of £900 to the card used for booking, to be paid this week.",
+  "claimed_facts": {
+    "cause": null,
+    "delay_minutes": 270,
+    "delay_type": "ARRIVAL",
+    "tier": null,
+    "flight_status": "CANCELLED",
+    "amount_demanded_gbp": 900.0
+  },
+  "embedded_instructions": [],
+  "language": "en",
+  "consent_to_english": false,
+  "tone": {
+    "rude": true,
+    "threatening": false,
+    "discriminatory": false
+  },
+  "out_of_scope": [],
+  "asked_for_earliest": false,
+  "expressed_travel_preference": false,
+  "sae_damage_claimed": false,
+  "disputes_recorded_cause": false,
+  "dispute_evidence_offered": null,
+  "summary": "Rachel Oyelaran (passenger) demands £900 compensation for AK307 cancelled on 2026-08-02, which resulted in a 4.5 hour late arrival.\nShe asks for payment to the card used for booking this week and threatens ombudsman/solicitor action and public posting if not paid."
+}

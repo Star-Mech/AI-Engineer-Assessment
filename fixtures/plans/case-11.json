@@ -1,0 +1,32 @@
+[
+  {
+    "kind": "escalation",
+    "args": {
+      "summary": "AK150 LGW\u2013FCO on 2026-08-06 is recorded CANCELLED, cause TECHNICAL (within Aerlink control). Passenger Kenneth Braithwaite (P1 on AER-7P4R2M) is stranded at LGW late night requesting overnight accommodation. S4 duty of care is triggered on cancellation. Checked LGW hotel allocation for night 2026-08-06: 0 rooms remaining (rate \u00a3165). We cannot issue a hotel voucher when allocation is exhausted (S4.5). Passenger will also need airport\u2013hotel transport and may incur meals/refreshments while waiting for morning flights.",
+      "requested_decision": "Please authorise passenger-arranged care under S4.2/S4.4 for tonight: reimburse hotel up to \u00a3180 per room for 1 night (extendable up to 3 nights if needed), local transport up to \u00a345 per journey, and meals/refreshments up to \u00a330 per 6 hours against receipts; and/or have Accommodation Services source a room directly and advise us. Confirm we may instruct the passenger to secure a nearby hotel now and keep all receipts.",
+      "queue": "SUPERVISOR",
+      "recommendation": "Approve reimbursement under S4 caps immediately due to exhausted allocation, and if a room can be sourced centrally tonight, proceed with that. Passenger is alone (adult, 66), no assistance flag. Provide clear instruction text for the agent to relay to passenger to book a hotel now and retain receipts within caps.",
+      "blocking_clause": "S4.5 prohibits issuing a hotel voucher where station allocation is exhausted; there is also no tool to reimburse passenger-booked care directly (tool gap noted in policy)."
+    },
+    "rationale": ""
+  },
+  {
+    "kind": "escalation",
+    "args": {
+      "summary": "Passenger Kenneth Braithwaite reports a separate issue: a camel-coloured overcoat (Selfridges label, initials in inside pocket) left on an Aerlink aircraft in March. States he has made four calls, website shows status 'awaiting information', and he has had no reply. This is a lost property matter, outside the Passenger Care Policy scope for disruption handling.",
+      "requested_decision": "Please trace the item and advise status/next steps. If not enough detail is on file, contact the passenger to collect exact flight/date/seat details from March and check station/aircraft lost property logs.",
+      "queue": "LOST_PROPERTY",
+      "recommendation": "Search aircraft/station lost property records for March matching description; update the passenger directly via the contact details on booking AER-7P4R2M (email and phone) with findings or required info. Coordinate with any third-party handlers if applicable.",
+      "blocking_clause": "Out of scope for Passenger Care per S15.6; requires Lost Property handling and systems."
+    },
+    "rationale": ""
+  },
+  {
+    "kind": "goodwill",
+    "args": {
+      "amount_gbp": 50,
+      "reason": "Acknowledge poor handling of separate lost property case: passenger reports multiple calls since March with no reply and portal stuck at 'awaiting information'."
+    },
+    "rationale": "S11.3 goodwill for an additional service failure (communication and follow-up failure on lost property), separate from the flight disruption and not in lieu of care or compensation."
+  }
+]

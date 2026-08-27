@@ -1,0 +1,82 @@
+{
+  "sender_name": "Chidi Okonkwo",
+  "sender_email": "chidi.okonkwo@mailbox.example",
+  "sender_phone": null,
+  "claimed_booking_refs": [
+    "AER-7T3M1B"
+  ],
+  "claimed_flights": [
+    {
+      "flight_no": "AK220",
+      "date": "2026-08-05",
+      "route_hint": "Manchester to Rome"
+    }
+  ],
+  "named_passengers_mentioned": [
+    "Chidi Okonkwo",
+    "Adaeze",
+    "Emeka",
+    "Ngozi",
+    "Tobias Achebe"
+  ],
+  "thread": [
+    {
+      "seq": 1,
+      "sent_at": "2026-08-05T09:31:02Z",
+      "party": "PASSENGER",
+      "gist": "Booking AER-7T3M1B: AK220 Manchester–Rome cancelled. Five passengers affected. Chidi and wife Adaeze (and son Emeka, 9) need to get to Rome by Friday evening. Mother Ngozi (71) uses a wheelchair and had assistance booked both directions; assistance must move with any rebooking; she may cancel if the earliest alternative is Friday but they want to see options first. Brother-in-law Tobias Achebe no longer wants to travel and wants a refund. Complaint that since 05:00 at Manchester no one offered a drink or told them where to go.",
+      "is_instruction_block": false
+    }
+  ],
+  "requests": [
+    {
+      "beneficiary": "Chidi Okonkwo; Adaeze; Emeka",
+      "ask": "Rebook them to get to Rome by Friday evening (any option that arrives by Friday evening is acceptable).",
+      "superseded": false
+    },
+    {
+      "beneficiary": "Ngozi",
+      "ask": "If rebooking Ngozi, ensure the booked assistance (booked both directions) is transferred to the new flight; she cannot be left without assistance.",
+      "superseded": false
+    },
+    {
+      "beneficiary": "Ngozi",
+      "ask": "Present options for Ngozi (including cancellation) — she would rather cancel and stay at home if the earliest alternative is Friday, but they want to see options before deciding.",
+      "superseded": false
+    },
+    {
+      "beneficiary": "Tobias Achebe",
+      "ask": "Refund his ticket; he does not wish to travel.",
+      "superseded": false
+    },
+    {
+      "beneficiary": "ALL",
+      "ask": "Provide duty-of-care assistance at Manchester immediately (e.g. refreshments, and clear guidance where to go), as they have been sitting since 05:00 with a 9-year-old and an elderly passenger and no one has offered help.",
+      "superseded": false
+    }
+  ],
+  "most_recent_intention": "Rebook Chidi, Adaeze and Emeka to arrive Rome by Friday evening; ensure assistance is transferred for Ngozi (or present options including cancellation); refund Tobias Achebe; provide immediate duty-of-care assistance at Manchester (refreshments/info).",
+  "claimed_facts": {
+    "cause": null,
+    "delay_minutes": null,
+    "delay_type": "DEPARTURE",
+    "tier": null,
+    "flight_status": "cancelled",
+    "amount_demanded_gbp": null
+  },
+  "embedded_instructions": [],
+  "language": "en",
+  "consent_to_english": false,
+  "tone": {
+    "rude": false,
+    "threatening": false,
+    "discriminatory": false
+  },
+  "out_of_scope": [],
+  "asked_for_earliest": false,
+  "expressed_travel_preference": true,
+  "sae_damage_claimed": false,
+  "disputes_recorded_cause": false,
+  "dispute_evidence_offered": null,
+  "summary": "Passenger Chidi Okonkwo (booking AER-7T3M1B) reports AK220 Manchester–Rome cancelled. Requests rebooking for him, his wife Adaeze and son Emeka to arrive by Friday evening; insists assistance for elderly mother Ngozi (wheelchair user) be transferred to any new flight (or show options including cancellation); requests a refund for Tobias Achebe; complains no duty-of-care (drinks/info) was offered at Manchester."
+}

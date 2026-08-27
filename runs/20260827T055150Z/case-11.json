@@ -1,0 +1,460 @@
+{
+  "case_id": "case-11",
+  "received_at": "2026-08-06T22:11:04Z",
+  "generated_by": "aerlink disruption desk",
+  "dry_run": false,
+  "decision": {
+    "booking_ref": "AER-7P4R2M",
+    "identity": {
+      "confirmed": true,
+      "method": "S2.1(a) booking reference and surname",
+      "candidates_seen": [
+        "AER-7P4R2M"
+      ],
+      "reason": "Reference AER-7P4R2M exists and carries a passenger with surname 'braithwaite'."
+    },
+    "passenger_gets": [
+      {
+        "action": "escalation",
+        "detail": {
+          "escalation_id": "ESC-00021",
+          "raised_at": "2026-08-27T06:20:25Z",
+          "status": "OPEN",
+          "queue": "SUPERVISOR",
+          "summary": "AK150 LGW–FCO on 2026-08-06 is recorded CANCELLED, cause TECHNICAL (within Aerlink control). Passenger Kenneth Braithwaite (P1 on AER-7P4R2M) is stranded at LGW late night requesting overnight accommodation. S4 duty of care is triggered on cancellation. Checked LGW hotel allocation for night 2026-08-06: 0 rooms remaining (rate £165). We cannot issue a hotel voucher when allocation is exhausted (S4.5). Passenger will also need airport–hotel transport and may incur meals/refreshments while waiting for morning flights.",
+          "requested_decision": "Please authorise passenger-arranged care under S4.2/S4.4 for tonight: reimburse hotel up to £180 per room for 1 night (extendable up to 3 nights if needed), local transport up to £45 per journey, and meals/refreshments up to £30 per 6 hours against receipts; and/or have Accommodation Services source a room directly and advise us. Confirm we may instruct the passenger to secure a nearby hotel now and keep all receipts.",
+          "booking_ref": "AER-7P4R2M",
+          "recommendation": "Approve reimbursement under S4 caps immediately due to exhausted allocation, and if a room can be sourced centrally tonight, proceed with that. Passenger is alone (adult, 66), no assistance flag. Provide clear instruction text for the agent to relay to passenger to book a hotel now and retain receipts within caps.",
+          "blocking_clause": "S4.5 prohibits issuing a hotel voucher where station allocation is exhausted; there is also no tool to reimburse passenger-booked care directly (tool gap noted in policy)."
+        }
+      },
+      {
+        "action": "escalation",
+        "detail": {
+          "escalation_id": "ESC-00022",
+          "raised_at": "2026-08-27T06:21:08Z",
+          "status": "OPEN",
+          "queue": "LOST_PROPERTY",
+          "summary": "Passenger Kenneth Braithwaite reports a separate issue: a camel-coloured overcoat (Selfridges label, initials in inside pocket) left on an Aerlink aircraft in March. States he has made four calls, website shows status 'awaiting information', and he has had no reply. This is a lost property matter, outside the Passenger Care Policy scope for disruption handling.",
+          "requested_decision": "Please trace the item and advise status/next steps. If not enough detail is on file, contact the passenger to collect exact flight/date/seat details from March and check station/aircraft lost property logs.",
+          "booking_ref": "AER-7P4R2M",
+          "recommendation": "Search aircraft/station lost property records for March matching description; update the passenger directly via the contact details on booking AER-7P4R2M (email and phone) with findings or required info. Coordinate with any third-party handlers if applicable.",
+          "blocking_clause": "Out of scope for Passenger Care per S15.6; requires Lost Property handling and systems."
+        }
+      },
+      {
+        "action": "goodwill",
+        "detail": {
+          "payment_id": "GWP-00023",
+          "type": "GOODWILL",
+          "paid_at": "2026-08-27T06:21:50Z",
+          "status": "PAID",
+          "amount_gbp": 50.0,
+          "booking_ref": "AER-7P4R2M",
+          "reason": "Acknowledge poor handling of separate lost property case: passenger reports multiple calls since March with no reply and portal stuck at 'awaiting information'."
+        }
+      }
+    ],
+    "nothing_actioned": false
+  },
+  "reasoning": {
+    "what_the_record_shows": {
+      "cause_code": "TECHNICAL",
+      "cause_is_extraordinary": false,
+      "flight_status": "CANCELLED",
+      "band": "A",
+      "arrival_delay_minutes_at_final_destination": null,
+      "departure_delay_minutes": null
+    },
+    "entitlement_status": "ASSESSED",
+    "entitlement_authority": "S10.2 -- the calculation service figure is the amount owed and was not recomputed.",
+    "policy_clauses_relied_on": [
+      "S1.3: great-circle distance 1435 km, therefore Band A.",
+      "S3: operational record shows cause_code=TECHNICAL, which is within Aerlink's control (S3.3).",
+      "S5.2: arrival delay at final destination is not yet known, because the passenger has not been re-routed. Compensation cannot be assessed until the passenger's re-routing (or refusal) is settled. S10.3 applies."
+    ],
+    "passenger_claims_not_used_as_fact": {
+      "claimed_cause": null,
+      "claimed_delay_minutes": null,
+      "claimed_delay_type": "DEPARTURE",
+      "claimed_tier": null
+    },
+    "rationales": [
+      {
+        "action": "goodwill",
+        "why": "S11.3 goodwill for an additional service failure (communication and follow-up failure on lost property), separate from the flight disruption and not in lieu of care or compensation."
+      }
+    ],
+    "agent_summary": "Actions taken\n- Identity confirmed via booking reference and surname match (S2.1(a)).\n- Verified AK150 LGW–FCO on 2026-08-06 was CANCELLED; cause TECHNICAL (within Aerlink control) per operational record.\n- Checked LGW hotel allocation for 2026-08-06: 0 rooms remaining. Escalated to Supervisor to authorise passenger-arranged care under S4.2/S4.4 caps due to exhausted allocation (S4.5).\n- Searched own-carrier availability LGW→FCO for 2026-08-07 (multiple Aerlink economy options available in the morning).\n- Searched partner availability LGW→FCO for 2026-08-07 (partner options available; S8.1(a) condition met as no own-carrier arrival within 6 hours of original scheduled arrival).\n- Raised a Lost Property referral for the March overcoat report (out of scope per S15.6).\n- Issued £50 goodwill for poor handling/communication on the separate lost property matter (S11.3; within representative limit).\n\nWhat the passenger must be told\n- Your flight AK150 (LGW→FCO) on 2026-08-06 was cancelled due to a technical fault on the aircraft. The record shows TECHNICAL as the cause and that there were no further Aerlink services to Rome that night.\n- Duty of care applies immediately on cancellation regardless of cause (S4). You are entitled to:\n  - Meals/refreshments up to £30 per passenger per 6 hours against receipts.\n  - Two phone calls or equivalent.\n  - Hotel up to £180 per room per night (max 3 nights without referral).\n  - Transport between airport and accommodation up to £45 per journey.\n- Gatwick hotel allocation for the night of 2026-08-06 was exhausted when we checked, so we have requested authorisation for you to secure your own hotel and transport now within the above caps and keep all receipts. We will confirm as soon as authorisation is granted.\n- Re-routing choices (S6.1). You may choose:\n  - Re-route to Rome at the earliest opportunity under comparable conditions; or\n  - Re-route at a later date at your convenience, subject to availability; or\n  - A full refund to the original form of payment within 7 days.\n- Partner airline re-routing may be used because no Aerlink option arrives within 6 hours of your original scheduled arrival (S8.1(a)). Partner bookings require authorisation and cannot be actioned automatically (S8.2).\n- Compensation: Because the recorded cause is within Aerlink’s control (TECHNICAL), compensation may be payable depending on your arrival delay at your final destination (S5.1, S5.2). We cannot assess or pay compensation until your re-routing or refund choice is settled and the arrival delay is known; it will be calculated and paid according to the entitlement service once that is set (S10.2/S10.3).\n- Separate matter: We have sent your overcoat report to the Lost Property team to trace and update you. As an acknowledgement of the poor follow-up you reported on that case, we have issued a £50 goodwill payment; this is separate from any entitlements for your flight disruption.\n\nAwaiting passenger decision\n- Please choose one of the Section 6.1 remedies:\n  - Option R1: Re-route to Rome on Aerlink on 2026-08-07. Available economy options (choose one):\n    - OPT-1EC8DBDC1D: AK450 LGW 06:00 → FCO 08:45 (Economy).\n    - OPT-E437483E90: AK492 LGW 06:50 → FCO 09:21 (Economy).\n    - OPT-6F4406CE74: AK309 LGW 07:20 → FCO 09:51 (Economy).\n    - OPT-95EE58A929: AK571 LGW 07:30 → FCO 10:20 (Economy).\n  - Option R2: Re-route to Rome on a partner carrier on 2026-08-07 (requires authorisation; will be referred if selected). Examples:\n    - OPT-2B5F811E2C: Aer Lingus EI682 LGW 05:45 → FCO 08:09 (Economy).\n    - OPT-CC948688EA: Aer Lingus EI388 LGW 05:45 → FCO 08:32 (Economy).\n  - Option R3: Re-route at a later date at your convenience. Please specify your preferred date/time window; we will check availability.\n  - Option R4: Full refund of the unused journey to the original form of payment within 7 days.\n- Care while you wait: Once supervisor authorisation is confirmed, please secure a nearby hotel for the night of 2026-08-06 and reasonable airport–hotel transport, and keep all receipts. Caps: hotel £180/room/night (max 3 nights), transport £45/journey, meals £30 per 6 hours. We will process reimbursement accordingly.\n\nUncertainties\n- Supervisor approval is pending for passenger-arranged hotel/transport/meals reimbursement due to exhausted LGW allocation (S4.5/S4.4).\n- Seat availability on listed flights may change; confirmation depends on your selection and inventory at time of booking.\n- Exact compensation amount cannot be determined until a re-routing/refund choice is made and the arrival delay at FCO is known (entitlement service currently shows INS UFFICIENT_DATA).\n- Lost property outcome for the overcoat is pending investigation by the Lost Property team."
+  },
+  "consulted": [
+    {
+      "n": 1,
+      "at": "2026-08-27T06:18:56Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "AER-7P4R2M"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 2,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "k.braithwaite@mailbox.example"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 3,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "Kenneth Braithwaite"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 4,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "K. Braithwaite"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 5,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "Braithwaite"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 6,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/bookings/AER-7P4R2M",
+      "params": null,
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 7,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/flights/AK150",
+      "params": {
+        "date": "2026-08-06"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 8,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "params": {
+        "booking_ref": "AER-7P4R2M"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 9,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "GET",
+      "path": "/customers/CUS-10012/history",
+      "params": null,
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 10,
+      "at": "2026-08-27T06:18:57Z",
+      "method": "POST",
+      "path": "/escalations",
+      "params": null,
+      "status": 201,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 11,
+      "at": "2026-08-27T06:19:28Z",
+      "method": "GET",
+      "path": "/stations/LGW/hotel-allocation",
+      "params": {
+        "night": "2026-08-06"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 12,
+      "at": "2026-08-27T06:19:28Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "params": {
+        "from": "LGW",
+        "to": "FCO",
+        "date": "2026-08-07",
+        "page": 1,
+        "page_size": 60
+      },
+      "status": 503,
+      "simulated": null,
+      "note": "retrying (attempt 1)"
+    },
+    {
+      "n": 13,
+      "at": "2026-08-27T06:19:31Z",
+      "method": "GET",
+      "path": "/flights/availability",
+      "params": {
+        "from": "LGW",
+        "to": "FCO",
+        "date": "2026-08-07",
+        "page": 1,
+        "page_size": 60
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 14,
+      "at": "2026-08-27T06:19:33Z",
+      "method": "GET",
+      "path": "/flights/availability/partners",
+      "params": {
+        "from": "LGW",
+        "to": "FCO",
+        "date": "2026-08-07",
+        "page": 1,
+        "page_size": 30
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 15,
+      "at": "2026-08-27T06:20:25Z",
+      "method": "GET",
+      "path": "/_audit",
+      "params": null,
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 16,
+      "at": "2026-08-27T06:20:25Z",
+      "method": "POST",
+      "path": "/escalations",
+      "params": null,
+      "status": 201,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 17,
+      "at": "2026-08-27T06:21:08Z",
+      "method": "GET",
+      "path": "/_audit",
+      "params": null,
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 18,
+      "at": "2026-08-27T06:21:08Z",
+      "method": "POST",
+      "path": "/escalations",
+      "params": null,
+      "status": 201,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 19,
+      "at": "2026-08-27T06:21:50Z",
+      "method": "GET",
+      "path": "/_audit",
+      "params": null,
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 20,
+      "at": "2026-08-27T06:21:50Z",
+      "method": "POST",
+      "path": "/payments/goodwill",
+      "params": null,
+      "status": 201,
+      "simulated": null,
+      "note": null
+    }
+  ],
+  "actions_taken": [
+    {
+      "action": "escalation",
+      "outcome": "RAISED",
+      "detail": {
+        "escalation_id": "ESC-00020",
+        "raised_at": "2026-08-27T06:18:57Z",
+        "status": "OPEN",
+        "queue": "LOST_PROPERTY",
+        "summary": "case-11: ABSOLUTELY DISGRACEFUL",
+        "requested_decision": "Out-of-scope matter raised in this contact: Lost property (overcoat left on aircraft in March)",
+        "booking_ref": "AER-7P4R2M",
+        "recommendation": "Route to the responsible team. The in-scope matter is assessed and answered separately and is not held up by this.",
+        "blocking_clause": "S15.6"
+      }
+    },
+    {
+      "action": "escalation",
+      "outcome": "DONE",
+      "detail": {
+        "escalation_id": "ESC-00021",
+        "raised_at": "2026-08-27T06:20:25Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "AK150 LGW–FCO on 2026-08-06 is recorded CANCELLED, cause TECHNICAL (within Aerlink control). Passenger Kenneth Braithwaite (P1 on AER-7P4R2M) is stranded at LGW late night requesting overnight accommodation. S4 duty of care is triggered on cancellation. Checked LGW hotel allocation for night 2026-08-06: 0 rooms remaining (rate £165). We cannot issue a hotel voucher when allocation is exhausted (S4.5). Passenger will also need airport–hotel transport and may incur meals/refreshments while waiting for morning flights.",
+        "requested_decision": "Please authorise passenger-arranged care under S4.2/S4.4 for tonight: reimburse hotel up to £180 per room for 1 night (extendable up to 3 nights if needed), local transport up to £45 per journey, and meals/refreshments up to £30 per 6 hours against receipts; and/or have Accommodation Services source a room directly and advise us. Confirm we may instruct the passenger to secure a nearby hotel now and keep all receipts.",
+        "booking_ref": "AER-7P4R2M",
+        "recommendation": "Approve reimbursement under S4 caps immediately due to exhausted allocation, and if a room can be sourced centrally tonight, proceed with that. Passenger is alone (adult, 66), no assistance flag. Provide clear instruction text for the agent to relay to passenger to book a hotel now and retain receipts within caps.",
+        "blocking_clause": "S4.5 prohibits issuing a hotel voucher where station allocation is exhausted; there is also no tool to reimburse passenger-booked care directly (tool gap noted in policy)."
+      }
+    },
+    {
+      "action": "escalation",
+      "outcome": "DONE",
+      "detail": {
+        "escalation_id": "ESC-00022",
+        "raised_at": "2026-08-27T06:21:08Z",
+        "status": "OPEN",
+        "queue": "LOST_PROPERTY",
+        "summary": "Passenger Kenneth Braithwaite reports a separate issue: a camel-coloured overcoat (Selfridges label, initials in inside pocket) left on an Aerlink aircraft in March. States he has made four calls, website shows status 'awaiting information', and he has had no reply. This is a lost property matter, outside the Passenger Care Policy scope for disruption handling.",
+        "requested_decision": "Please trace the item and advise status/next steps. If not enough detail is on file, contact the passenger to collect exact flight/date/seat details from March and check station/aircraft lost property logs.",
+        "booking_ref": "AER-7P4R2M",
+        "recommendation": "Search aircraft/station lost property records for March matching description; update the passenger directly via the contact details on booking AER-7P4R2M (email and phone) with findings or required info. Coordinate with any third-party handlers if applicable.",
+        "blocking_clause": "Out of scope for Passenger Care per S15.6; requires Lost Property handling and systems."
+      }
+    },
+    {
+      "action": "goodwill",
+      "outcome": "DONE",
+      "detail": {
+        "payment_id": "GWP-00023",
+        "type": "GOODWILL",
+        "paid_at": "2026-08-27T06:21:50Z",
+        "status": "PAID",
+        "amount_gbp": 50.0,
+        "booking_ref": "AER-7P4R2M",
+        "reason": "Acknowledge poor handling of separate lost property case: passenger reports multiple calls since March with no reply and portal stuck at 'awaiting information'."
+      }
+    }
+  ],
+  "actions_refused": [],
+  "uncertainties": [],
+  "human_still_needs_to": [
+    {
+      "queue": "LOST_PROPERTY",
+      "clause": "S15.6",
+      "raised_by": "gate refusal",
+      "summary": "case-11: ABSOLUTELY DISGRACEFUL",
+      "decide": "Out-of-scope matter raised in this contact: Lost property (overcoat left on aircraft in March)",
+      "recommendation": "Route to the responsible team. The in-scope matter is assessed and answered separately and is not held up by this."
+    },
+    {
+      "queue": "SUPERVISOR",
+      "clause": "S4.5 prohibits issuing a hotel voucher where station allocation is exhausted; there is also no tool to reimburse passenger-booked care directly (tool gap noted in policy).",
+      "raised_by": "case handler",
+      "summary": "AK150 LGW–FCO on 2026-08-06 is recorded CANCELLED, cause TECHNICAL (within Aerlink control). Passenger Kenneth Braithwaite (P1 on AER-7P4R2M) is stranded at LGW late night requesting overnight accommodation. S4 duty of care is triggered on cancellation. Checked LGW hotel allocation for night 2026-08-06: 0 rooms remaining (rate £165). We cannot issue a hotel voucher when allocation is exhausted (S4.5). Passenger will also need airport–hotel transport and may incur meals/refreshments while waiting for morning flights.",
+      "decide": "Please authorise passenger-arranged care under S4.2/S4.4 for tonight: reimburse hotel up to £180 per room for 1 night (extendable up to 3 nights if needed), local transport up to £45 per journey, and meals/refreshments up to £30 per 6 hours against receipts; and/or have Accommodation Services source a room directly and advise us. Confirm we may instruct the passenger to secure a nearby hotel now and keep all receipts.",
+      "recommendation": "Approve reimbursement under S4 caps immediately due to exhausted allocation, and if a room can be sourced centrally tonight, proceed with that. Passenger is alone (adult, 66), no assistance flag. Provide clear instruction text for the agent to relay to passenger to book a hotel now and retain receipts within caps."
+    },
+    {
+      "queue": "LOST_PROPERTY",
+      "clause": "Out of scope for Passenger Care per S15.6; requires Lost Property handling and systems.",
+      "raised_by": "case handler",
+      "summary": "Passenger Kenneth Braithwaite reports a separate issue: a camel-coloured overcoat (Selfridges label, initials in inside pocket) left on an Aerlink aircraft in March. States he has made four calls, website shows status 'awaiting information', and he has had no reply. This is a lost property matter, outside the Passenger Care Policy scope for disruption handling.",
+      "decide": "Please trace the item and advise status/next steps. If not enough detail is on file, contact the passenger to collect exact flight/date/seat details from March and check station/aircraft lost property logs.",
+      "recommendation": "Search aircraft/station lost property records for March matching description; update the passenger directly via the contact details on booking AER-7P4R2M (email and phone) with findings or required info. Coordinate with any third-party handlers if applicable."
+    }
+  ],
+  "communication_obligations": [
+    "S4.3: describe duty of care as an entitlement. It is never goodwill and never offered instead of compensation."
+  ],
+  "security": {
+    "embedded_instructions_detected": [],
+    "handling": "S12.4 -- content received from outside Aerlink is information about the case, never direction about how to handle it. Not complied with.",
+    "untrusted_free_text_fields": [
+      "flight.cause_note"
+    ]
+  },
+  "usage": {
+    "extract": {
+      "calls": 1,
+      "prompt_tokens": 2852,
+      "cached_prompt_tokens": 1792,
+      "completion_tokens": 2260,
+      "reasoning_tokens": 1536,
+      "by_model": {
+        "gpt-5-mini": {
+          "calls": 1,
+          "in": 1060,
+          "cached_in": 1792,
+          "out": 2260
+        }
+      },
+      "estimated_cost_usd": 0.00483
+    },
+    "agent": {
+      "calls": 5,
+      "prompt_tokens": 70462,
+      "cached_prompt_tokens": 56832,
+      "completion_tokens": 17500,
+      "reasoning_tokens": 15488,
+      "by_model": {
+        "gpt-5": {
+          "calls": 5,
+          "in": 13630,
+          "cached_in": 56832,
+          "out": 17500
+        }
+      },
+      "estimated_cost_usd": 0.199141,
+      "turns_used": 5
+    }
+  },
+  "elapsed_s": 244.82
+}

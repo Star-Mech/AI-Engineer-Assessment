@@ -1,0 +1,12 @@
+[
+  {
+    "kind": "compensation",
+    "args": {
+      "passenger_ids": [
+        "P1"
+      ],
+      "reason": "Statutory compensation for AK307 (LHR\u2013MAD) on 2026-08-02: flight cancelled, passenger re-routed to AK309 same day, arrival delay at final destination 270 minutes."
+    },
+    "rationale": "S3.3 and S3.4: cause code TECHNICAL is within Aerlink\u2019s control; S5.1(c): arrival delay \u2265 3 hours; S1.3 Band A distance 1,264 km; S5.3: Band A amount applies; S5.4: no 50% reduction because re-routed arrival delay was \u2265 4 hours; S10.2: pay amount returned by entitlement service."
+  }
+]

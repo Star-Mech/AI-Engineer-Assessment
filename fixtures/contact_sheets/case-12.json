@@ -1,0 +1,64 @@
+{
+  "sender_name": "Lucia Marquez-Ibanez",
+  "sender_email": "lucia.marquez@mailbox.example",
+  "sender_phone": null,
+  "claimed_booking_refs": [
+    "AER-1F6G8P"
+  ],
+  "claimed_flights": [
+    {
+      "flight_no": "AK418",
+      "date": "2026-08-05",
+      "route_hint": "Barcelona to London"
+    }
+  ],
+  "named_passengers_mentioned": [
+    "Lucia Marquez-Ibanez",
+    "Mateo"
+  ],
+  "thread": [
+    {
+      "seq": 1,
+      "sent_at": "2026-08-05T18:04:27Z",
+      "party": "PASSENGER",
+      "gist": "Reserva AER-1F6G8P: vuelo AK418 (Barcelona-Londres) cancelado; pasajera en aeropuerto con su hijo de 6 años; pide ser recolocada en el próximo vuelo disponible mañana por la mañana y pregunta por derecho a compensación (mostrador y teléfono dicen cosas distintas); consiente respuesta en inglés simple.",
+      "is_instruction_block": false
+    }
+  ],
+  "requests": [
+    {
+      "beneficiary": "Lucia Marquez-Ibanez and Mateo",
+      "ask": "Rebook onto the next available flight tomorrow morning so they arrive in London by tomorrow morning at the latest.",
+      "superseded": false
+    },
+    {
+      "beneficiary": "Lucia Marquez-Ibanez",
+      "ask": "Confirm whether she is entitled to compensation and explain the conflicting information given at the desk and on the phone.",
+      "superseded": false
+    }
+  ],
+  "most_recent_intention": "Be rebooked onto the next available flight tomorrow morning for Lucia Marquez-Ibanez and her 6-year-old son Mateo; and be told whether she is entitled to compensation (desk and phone gave conflicting information).",
+  "claimed_facts": {
+    "cause": null,
+    "delay_minutes": null,
+    "delay_type": "DEPARTURE",
+    "tier": null,
+    "flight_status": "CANCELLED",
+    "amount_demanded_gbp": null
+  },
+  "embedded_instructions": [],
+  "language": "es",
+  "consent_to_english": true,
+  "tone": {
+    "rude": false,
+    "threatening": false,
+    "discriminatory": false
+  },
+  "out_of_scope": [],
+  "asked_for_earliest": true,
+  "expressed_travel_preference": true,
+  "sae_damage_claimed": false,
+  "disputes_recorded_cause": false,
+  "dispute_evidence_offered": null,
+  "summary": "Lucia Marquez-Ibanez (email lucia.marquez@mailbox.example) reports AK418 Barcelona–London on 2026-08-05 was cancelled and she is at the airport with her 6‑year‑old son. She requests rebooking onto the next available flight tomorrow morning and asks whether she is entitled to compensation (desk and phone gave conflicting information)."
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "rebooking",
+    "args": {
+      "passenger_ids": [
+        "P1"
+      ],
+      "option_id": "OPT-CE02C1D4BE",
+      "flight_no": "AK151",
+      "date": "2026-08-10",
+      "cabin": "ECONOMY",
+      "fare_gbp": 0,
+      "operated_by": "Aerlink"
+    },
+    "rationale": "Passenger elected re-routing at a later date at their convenience (Mon 10 Aug) and asked for the earliest flight that day. Own-carrier, same cabin, no fare difference per S6.1(b) and S6.3. Confirmed per S6.4 because the passenger explicitly requested the earliest option on that date."
+  },
+  {
+    "kind": "compensation",
+    "args": {
+      "passenger_ids": [
+        "P1"
+      ],
+      "reason": "AK229 on 2026-08-05 cancelled for CREW. Passenger elected re-routing at later date (2026-08-10) and arrived well over 3h after original scheduled arrival. Band A journey."
+    },
+    "rationale": "Compensation payable per S5.1(a)(b)(d) with arrival delay threshold in S5.1(c) measured per S5.2. Amount per S10.2 to be determined by the entitlement service at execution."
+  },
+  {
+    "kind": "escalation",
+    "args": {
+      "summary": "AER-5C9X3T, Greg Whitmore. AK229 (LHR-GVA) on 2026-08-05 cancelled (cause_code=CREW). Passenger withdrew an initial refund request and asked to be rebooked on the earliest Geneva flight on Monday 10 Aug. I have rebooked P1 onto AK151 on 2026-08-10 (LHR 05:00 local -> GVA 06:32 local), Economy, own carrier, no fare difference, per S6.1(b)/S6.3. Passenger also asked to keep an aisle seat if possible and earlier in July had 14C. Additionally, earlier in the thread the passenger requested to stop marketing emails.",
+      "requested_decision": "1) Action marketing unsubscribe for contact email greg.whitmore@mailbox.example. 2) Allocate an aisle seat for P1 on AK151 (2026-08-10 LHR-GVA) if possible; if a paid seat-selection fee would apply, contact the passenger before proceeding or advise them to select at check-in.",
+      "queue": "GENERAL",
+      "recommendation": "Proceed with removing the passenger from marketing communications. Attempt to assign any available aisle seat for P1 on AK151; if an extra fee applies, obtain consent first, otherwise advise passenger to select an aisle during online check-in. Note: Compensation assessment is being handled via the entitlement service; duty-of-care reimbursement to be offered if receipts are later provided within S4.2 caps.",
+      "blocking_clause": "S15.6 (out-of-scope item: marketing unsubscribe) and no seat-allocation tool within the disruption desk remit."
+    },
+    "rationale": ""
+  }
+]

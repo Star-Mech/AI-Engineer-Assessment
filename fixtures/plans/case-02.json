@@ -1,0 +1,24 @@
+[
+  {
+    "kind": "escalation",
+    "args": {
+      "summary": "AER-7T3M1B. AK220 MAN\u2013FCO on 2026-08-05 is CANCELLED. Operational cause: TECHNICAL. Five pax at MAN since approx 05:00 per contact: P1 Chidi Okonkwo (41), P2 Adaeze Okonkwo (39), P3 Emeka Okonkwo (9), P4 Ngozi Okonkwo (71, WCHR), P5 Tobias Achebe (44). Duty of care is triggered immediately under S4.1. Passenger reports no refreshments or guidance offered so far.",
+      "requested_decision": "Please arrange immediate on-station duty-of-care at MAN: issue meal/refreshment vouchers for all five passengers within S4.2 caps, provide clear guidance/wayfinding, and ensure assistance for P4 (WCHR) while they await re-routing/transport.",
+      "queue": "OPS_LIAISON",
+      "recommendation": "Contact the MAN station team to meet the party at the Aerlink service desk or current waiting area; provide refreshment vouchers (guide: up to \u00a330 per passenger per 6 hours), offer two calls or equivalent, and confirm wheelchair assistance coverage for P4 during waiting and for any transfer to a rebooked flight once chosen. Record actions in the case.",
+      "blocking_clause": "S4.2/S4.5 duty-of-care owed now; no tool exists to issue meal/refreshment vouchers directly \u2014 requires station action."
+    },
+    "rationale": ""
+  },
+  {
+    "kind": "refund",
+    "args": {
+      "passenger_ids": [
+        "P5"
+      ],
+      "amount_gbp": 297.5,
+      "reason": "Cancellation of AK220; passenger Tobias Achebe elected refund under S6.1(c)."
+    },
+    "rationale": "S7.1 refund of ticket price for the part not made; S7.3 permits partial refund on multi-passenger booking. Amount is pro\u2011rata share of total paid for single-segment journey."
+  }
+]

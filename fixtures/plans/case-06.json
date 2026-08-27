@@ -1,0 +1,12 @@
+[
+  {
+    "kind": "compensation",
+    "args": {
+      "passenger_ids": [
+        "P1"
+      ],
+      "reason": "Statutory compensation for delay on AK155 (LGW-DUB) 2026-08-06"
+    },
+    "rationale": "Compensation payable under APCP-2026-04: S5.1(a\u2013c) met; operational record cause_code=TECHNICAL within Aerlink control (S3.3/S3.4); arrival delay at final destination 195 minutes (S5.2). Amount determined by entitlement calculation service per S10.2."
+  }
+]

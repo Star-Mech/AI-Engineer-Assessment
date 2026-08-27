@@ -1,0 +1,12 @@
+[
+  {
+    "kind": "compensation",
+    "args": {
+      "passenger_ids": [
+        "P1"
+      ],
+      "reason": "Cancellation with re-routing; TECHNICAL cause within Aerlink control; arrival delay at final destination 220 minutes triggers compensation with 50% reduction per S5.4."
+    },
+    "rationale": "S5.1: cancellation within Aerlink control (S3.3) and arrival delay >=3h; S5.4: re-routed and arrival delay <5h for Band B so 50% reduction applies; S10.2: executing the entitlement service figure for compensation."
+  }
+]

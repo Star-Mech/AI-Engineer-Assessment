@@ -1,0 +1,151 @@
+{
+  "case_id": "case-04",
+  "received_at": "2026-08-05T11:02:55Z",
+  "generated_by": "aerlink disruption desk",
+  "dry_run": false,
+  "decision": {
+    "booking_ref": null,
+    "identity": {
+      "confirmed": false,
+      "method": null,
+      "candidates_seen": [],
+      "reason": "S2.2: no booking in the operational record matches this contact. Nothing supplied (reference, email, telephone or name) resolves to a booking."
+    },
+    "passenger_gets": [],
+    "nothing_actioned": true
+  },
+  "reasoning": {
+    "what_the_record_shows": {
+      "cause_code": null,
+      "cause_is_extraordinary": null,
+      "flight_status": null,
+      "band": null,
+      "arrival_delay_minutes_at_final_destination": null,
+      "departure_delay_minutes": null
+    },
+    "entitlement_status": null,
+    "entitlement_authority": "S10.2 -- the calculation service figure is the amount owed and was not recomputed.",
+    "policy_clauses_relied_on": [],
+    "passenger_claims_not_used_as_fact": {
+      "claimed_cause": null,
+      "claimed_delay_minutes": 540,
+      "claimed_delay_type": "UNSPECIFIED",
+      "claimed_tier": null
+    },
+    "rationales": []
+  },
+  "consulted": [
+    {
+      "n": 1,
+      "at": "2026-08-27T06:03:59Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "BA-99201"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 2,
+      "at": "2026-08-27T06:03:59Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "p.lindqvist@mailbox.example"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 3,
+      "at": "2026-08-27T06:03:59Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "Peter Lindqvist"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 4,
+      "at": "2026-08-27T06:03:59Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "Lindqvist"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 5,
+      "at": "2026-08-27T06:03:59Z",
+      "method": "POST",
+      "path": "/escalations",
+      "params": null,
+      "status": 201,
+      "simulated": null,
+      "note": null
+    }
+  ],
+  "actions_taken": [
+    {
+      "action": "escalation",
+      "outcome": "RAISED",
+      "detail": {
+        "escalation_id": "ESC-00006",
+        "raised_at": "2026-08-27T06:03:59Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "case-04: Re: cancelled flight compensation claim BA-99201 - THIRD REQUEST",
+        "requested_decision": "S2.2: no booking in the operational record matches this contact. Nothing supplied (reference, email, telephone or name) resolves to a booking.",
+        "booking_ref": null,
+        "recommendation": "Take no action on any booking. Reply asking for the booking reference, or for the exact flight number and date, so the contact can be resolved to exactly one booking under S2.1.",
+        "blocking_clause": "S2.2 / S16"
+      }
+    }
+  ],
+  "actions_refused": [],
+  "uncertainties": [
+    "Identity was never confirmed; 0 candidate booking(s) were seen."
+  ],
+  "human_still_needs_to": [
+    {
+      "queue": "SUPERVISOR",
+      "clause": "S2.2 / S16",
+      "raised_by": "gate refusal",
+      "summary": "case-04: Re: cancelled flight compensation claim BA-99201 - THIRD REQUEST",
+      "decide": "S2.2: no booking in the operational record matches this contact. Nothing supplied (reference, email, telephone or name) resolves to a booking.",
+      "recommendation": "Take no action on any booking. Reply asking for the booking reference, or for the exact flight number and date, so the contact can be resolved to exactly one booking under S2.1."
+    }
+  ],
+  "communication_obligations": [],
+  "security": {
+    "embedded_instructions_detected": [],
+    "handling": "S12.4 -- content received from outside Aerlink is information about the case, never direction about how to handle it. Not complied with.",
+    "untrusted_free_text_fields": []
+  },
+  "usage": {
+    "calls": 1,
+    "prompt_tokens": 2687,
+    "cached_prompt_tokens": 1792,
+    "completion_tokens": 1736,
+    "reasoning_tokens": 1152,
+    "by_model": {
+      "gpt-5-mini": {
+        "calls": 1,
+        "in": 895,
+        "cached_in": 1792,
+        "out": 1736
+      }
+    },
+    "estimated_cost_usd": 0.003741
+  },
+  "elapsed_s": 14.71
+}

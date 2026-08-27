@@ -1,0 +1,415 @@
+{"t": 0.0, "case": "case-01", "kind": "case", "message": "case-01 starting"}
+{"t": 0.0, "case": "case-01", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 25.826, "case": "case-01", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2733 out=1600  $0.00388"}
+{"t": 25.826, "case": "case-01", "kind": "phase", "message": "identity + dossier"}
+{"t": 25.848, "case": "case-01", "kind": "ops", "message": "GET  /bookings/search                               200  21ms"}
+{"t": 25.863, "case": "case-01", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 25.88, "case": "case-01", "kind": "ops", "message": "GET  /bookings/search                               200  16ms"}
+{"t": 25.911, "case": "case-01", "kind": "ops", "message": "GET  /bookings/search                               200  26ms"}
+{"t": 25.915, "case": "case-01", "kind": "ops", "message": "GET  /bookings/AER-4K2P9X                           200  2ms"}
+{"t": 25.942, "case": "case-01", "kind": "ops", "message": "GET  /flights/AK412                                 200  27ms"}
+{"t": 25.958, "case": "case-01", "kind": "ops", "message": "GET  /entitlements/calculate                        200  14ms"}
+{"t": 25.961, "case": "case-01", "kind": "ops", "message": "GET  /customers/CUS-10001/history                   200  3ms"}
+{"t": 25.961, "case": "case-01", "kind": "info", "message": "identity CONFIRMED AER-4K2P9X  S2.1(a) booking reference and surname"}
+{"t": 25.961, "case": "case-01", "kind": "phase", "message": "hard bars"}
+{"t": 25.961, "case": "case-01", "kind": "phase", "message": "agent -- gpt-5"}
+{"t": 25.963, "case": "case-01", "kind": "llm", "message": "turn 1/14 requesting..."}
+{"t": 46.585, "case": "case-01", "kind": "llm", "message": "turn 1  gpt-5  in=11653 (cached 0) out=1769"}
+{"t": 46.585, "case": "case-01", "kind": "tool", "message": "search_availability        {\"from_iata\": \"LHR\", \"to_iata\": \"BCN\", \"date\": \"2026-08-04\", \"after\": \"08:00\"}"}
+{"t": 46.588, "case": "case-01", "kind": "ops", "message": "GET  /flights/availability                          503  2ms  retry 1/3"}
+{"t": 49.393, "case": "case-01", "kind": "ops", "message": "GET  /flights/availability                          200  2404ms"}
+{"t": 49.393, "case": "case-01", "kind": "tool", "message": "search_availability        {\"from_iata\": \"LGW\", \"to_iata\": \"BCN\", \"date\": \"2026-08-04\", \"after\": \"08:00\"}"}
+{"t": 49.417, "case": "case-01", "kind": "ops", "message": "GET  /flights/availability                          503  24ms  retry 1/3"}
+{"t": 51.863, "case": "case-01", "kind": "ops", "message": "GET  /flights/availability                          200  2044ms"}
+{"t": 51.863, "case": "case-01", "kind": "llm", "message": "turn 2/14 requesting..."}
+{"t": 110.834, "case": "case-01", "kind": "llm", "message": "turn 2  gpt-5  in=13506 (cached 11520) out=4286"}
+{"t": 110.834, "case": "case-01", "kind": "tool", "message": "rebook                     {\"passenger_ids\": [\"P1\"], \"option_id\": \"OPT-F1C4639EBC\", \"flight_no\": \"AK845\", \"date\": \"2026-08-04\", \"cabin\": \"ECONOMY\", \"fare_gbp\": 0, \"..."}
+{"t": 110.851, "case": "case-01", "kind": "ops", "message": "GET  /_audit                                        200  16ms"}
+{"t": 110.851, "case": "case-01", "kind": "gate", "message": "approved rebooking"}
+{"t": 110.865, "case": "case-01", "kind": "ops", "message": "POST /rebooking                                     201  14ms"}
+{"t": 110.865, "case": "case-01", "kind": "action", "message": "rebooking DONE     AK845"}
+{"t": 110.865, "case": "case-01", "kind": "llm", "message": "turn 3/14 requesting..."}
+{"t": 204.329, "case": "case-01", "kind": "llm", "message": "turn 3  gpt-5  in=13765 (cached 24832) out=4816"}
+{"t": 204.329, "case": "case-01", "kind": "tool", "message": "escalate                   {\"summary\": \"AER-4K2P9X. Identity confirmed via booking ref + surname. AK412 LHR-BCN 2026-08-04 was cancelled; operational cause WEATHER ..."}
+{"t": 204.344, "case": "case-01", "kind": "ops", "message": "GET  /_audit                                        200  14ms"}
+{"t": 204.345, "case": "case-01", "kind": "gate", "message": "approved escalation"}
+{"t": 204.359, "case": "case-01", "kind": "ops", "message": "POST /escalations                                   201  14ms"}
+{"t": 204.359, "case": "case-01", "kind": "action", "message": "escalation DONE     GENERAL"}
+{"t": 204.36, "case": "case-01", "kind": "llm", "message": "turn 4/14 requesting..."}
+{"t": 283.853, "case": "case-01", "kind": "llm", "message": "turn 4  gpt-5  in=14494 (cached 38400) out=5026"}
+{"t": 283.855, "case": "case-01", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-02", "kind": "case", "message": "case-02 starting"}
+{"t": 0.0, "case": "case-02", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 26.678, "case": "case-02", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2889 out=2504  $0.00533"}
+{"t": 26.678, "case": "case-02", "kind": "phase", "message": "identity + dossier"}
+{"t": 26.704, "case": "case-02", "kind": "ops", "message": "GET  /bookings/search                               200  25ms"}
+{"t": 26.72, "case": "case-02", "kind": "ops", "message": "GET  /bookings/search                               200  16ms"}
+{"t": 26.736, "case": "case-02", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 26.751, "case": "case-02", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 26.766, "case": "case-02", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 26.783, "case": "case-02", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 26.8, "case": "case-02", "kind": "ops", "message": "GET  /bookings/search                               200  16ms"}
+{"t": 26.815, "case": "case-02", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 26.831, "case": "case-02", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 26.834, "case": "case-02", "kind": "ops", "message": "GET  /bookings/AER-7T3M1B                           200  3ms"}
+{"t": 26.847, "case": "case-02", "kind": "ops", "message": "GET  /flights/AK220                                 200  12ms"}
+{"t": 26.864, "case": "case-02", "kind": "ops", "message": "GET  /entitlements/calculate                        200  17ms"}
+{"t": 26.879, "case": "case-02", "kind": "ops", "message": "GET  /customers/CUS-10002/history                   200  15ms"}
+{"t": 26.879, "case": "case-02", "kind": "info", "message": "identity CONFIRMED AER-7T3M1B  S2.1(a) booking reference and surname"}
+{"t": 26.879, "case": "case-02", "kind": "phase", "message": "hard bars"}
+{"t": 26.879, "case": "case-02", "kind": "phase", "message": "agent -- gpt-5"}
+{"t": 26.88, "case": "case-02", "kind": "llm", "message": "turn 1/14 requesting..."}
+{"t": 77.295, "case": "case-02", "kind": "llm", "message": "turn 1  gpt-5  in=12842 (cached 2432) out=2890"}
+{"t": 77.295, "case": "case-02", "kind": "tool", "message": "search_availability        {\"from_iata\": \"MAN\", \"to_iata\": \"FCO\", \"date\": \"2026-08-05\", \"after\": \"07:00\"}"}
+{"t": 77.313, "case": "case-02", "kind": "ops", "message": "GET  /flights/availability                          503  17ms  retry 1/3"}
+{"t": 79.826, "case": "case-02", "kind": "ops", "message": "GET  /flights/availability                          200  2112ms"}
+{"t": 79.827, "case": "case-02", "kind": "tool", "message": "search_availability        {\"from_iata\": \"MAN\", \"to_iata\": \"FCO\", \"date\": \"2026-08-06\", \"after\": null}"}
+{"t": 79.841, "case": "case-02", "kind": "ops", "message": "GET  /flights/availability                          503  14ms  retry 1/3"}
+{"t": 82.582, "case": "case-02", "kind": "ops", "message": "GET  /flights/availability                          200  2340ms"}
+{"t": 82.583, "case": "case-02", "kind": "tool", "message": "search_availability        {\"from_iata\": \"MAN\", \"to_iata\": \"FCO\", \"date\": \"2026-08-07\", \"after\": null}"}
+{"t": 82.6, "case": "case-02", "kind": "ops", "message": "GET  /flights/availability                          503  16ms  retry 1/3"}
+{"t": 84.805, "case": "case-02", "kind": "ops", "message": "GET  /flights/availability                          200  1805ms"}
+{"t": 84.805, "case": "case-02", "kind": "llm", "message": "turn 2/14 requesting..."}
+{"t": 201.155, "case": "case-02", "kind": "llm", "message": "turn 2  gpt-5  in=15573 (cached 15104) out=7167"}
+{"t": 201.155, "case": "case-02", "kind": "tool", "message": "escalate                   {\"summary\": \"AER-7T3M1B. AK220 MAN\\u2013FCO on 2026-08-05 is CANCELLED. Operational cause: TECHNICAL. Five pax at MAN since approx 05:00 ..."}
+{"t": 201.171, "case": "case-02", "kind": "ops", "message": "GET  /_audit                                        200  13ms"}
+{"t": 201.171, "case": "case-02", "kind": "gate", "message": "approved escalation"}
+{"t": 201.186, "case": "case-02", "kind": "ops", "message": "POST /escalations                                   201  15ms"}
+{"t": 201.187, "case": "case-02", "kind": "action", "message": "escalation DONE     OPS_LIAISON"}
+{"t": 201.187, "case": "case-02", "kind": "llm", "message": "turn 3/14 requesting..."}
+{"t": 283.202, "case": "case-02", "kind": "llm", "message": "turn 3  gpt-5  in=16268 (cached 30464) out=4775"}
+{"t": 283.202, "case": "case-02", "kind": "tool", "message": "refund                     {\"passenger_ids\": [\"P5\"], \"amount_gbp\": 297.5, \"reason\": \"Cancellation of AK220; passenger Tobias Achebe elected refund under S6.1(c).\", ..."}
+{"t": 283.229, "case": "case-02", "kind": "ops", "message": "GET  /_audit                                        200  27ms"}
+{"t": 283.229, "case": "case-02", "kind": "gate", "message": "approved refund"}
+{"t": 283.232, "case": "case-02", "kind": "ops", "message": "POST /refunds                                       201  3ms"}
+{"t": 283.232, "case": "case-02", "kind": "action", "message": "refund    DONE     297.5"}
+{"t": 283.232, "case": "case-02", "kind": "llm", "message": "turn 4/14 requesting..."}
+{"t": 327.536, "case": "case-02", "kind": "llm", "message": "turn 4  gpt-5  in=16457 (cached 46592) out=3120"}
+{"t": 327.537, "case": "case-02", "kind": "tool", "message": "search_availability        {\"from_iata\": \"MAN\", \"to_iata\": \"FCO\", \"date\": \"2026-08-05\", \"after\": \"10:45\"}"}
+{"t": 329.653, "case": "case-02", "kind": "ops", "message": "GET  /flights/availability                          200  2116ms"}
+{"t": 329.653, "case": "case-02", "kind": "llm", "message": "turn 5/14 requesting..."}
+{"t": 417.582, "case": "case-02", "kind": "llm", "message": "turn 5  gpt-5  in=17377 (cached 62848) out=6459"}
+{"t": 417.582, "case": "case-02", "kind": "tool", "message": "finish                     {\"summary\": \"Identity confirmed via booking reference and matching contact email. AK220 MAN\\u2013FCO 2026-08-05 is CANCELLED, cause TECHN..."}
+{"t": 417.584, "case": "case-02", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-03", "kind": "case", "message": "case-03 starting"}
+{"t": 0.0, "case": "case-03", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 12.909, "case": "case-03", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2615 out=1489  $0.00323"}
+{"t": 12.909, "case": "case-03", "kind": "phase", "message": "identity + dossier"}
+{"t": 12.923, "case": "case-03", "kind": "ops", "message": "GET  /bookings/search                               200  14ms"}
+{"t": 12.938, "case": "case-03", "kind": "ops", "message": "GET  /bookings/search                               200  14ms"}
+{"t": 12.954, "case": "case-03", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 12.954, "case": "case-03", "kind": "info", "message": "identity NOT CONFIRMED  S2.2: 3 bookings match this contact (AER-2X8L4D, AER-6M2J7W, AER-9V3H5"}
+{"t": 12.954, "case": "case-03", "kind": "phase", "message": "hard bars"}
+{"t": 12.954, "case": "case-03", "kind": "gate", "message": "BARRED by S2.2 / S16 -- the agent will not be run"}
+{"t": 12.957, "case": "case-03", "kind": "ops", "message": "POST /escalations                                   201  2ms"}
+{"t": 12.958, "case": "case-03", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-04", "kind": "case", "message": "case-04 starting"}
+{"t": 0.0, "case": "case-04", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 14.614, "case": "case-04", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2687 out=1736  $0.00374"}
+{"t": 14.614, "case": "case-04", "kind": "phase", "message": "identity + dossier"}
+{"t": 14.642, "case": "case-04", "kind": "ops", "message": "GET  /bookings/search                               200  27ms"}
+{"t": 14.658, "case": "case-04", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 14.672, "case": "case-04", "kind": "ops", "message": "GET  /bookings/search                               200  14ms"}
+{"t": 14.69, "case": "case-04", "kind": "ops", "message": "GET  /bookings/search                               200  17ms"}
+{"t": 14.69, "case": "case-04", "kind": "info", "message": "identity NOT CONFIRMED  S2.2: no booking in the operational record matches this contact. Nothi"}
+{"t": 14.69, "case": "case-04", "kind": "phase", "message": "hard bars"}
+{"t": 14.69, "case": "case-04", "kind": "gate", "message": "BARRED by S2.2 / S16 -- the agent will not be run"}
+{"t": 14.705, "case": "case-04", "kind": "ops", "message": "POST /escalations                                   201  15ms"}
+{"t": 14.707, "case": "case-04", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-05", "kind": "case", "message": "case-05 starting"}
+{"t": 0.001, "case": "case-05", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 15.909, "case": "case-05", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2756 out=1884  $0.00405"}
+{"t": 15.91, "case": "case-05", "kind": "phase", "message": "identity + dossier"}
+{"t": 15.937, "case": "case-05", "kind": "ops", "message": "GET  /bookings/search                               200  26ms"}
+{"t": 15.953, "case": "case-05", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 15.957, "case": "case-05", "kind": "ops", "message": "GET  /bookings/search                               200  4ms"}
+{"t": 15.985, "case": "case-05", "kind": "ops", "message": "GET  /bookings/search                               200  28ms"}
+{"t": 16.0, "case": "case-05", "kind": "ops", "message": "GET  /bookings/AER-9L5D2R                           200  15ms"}
+{"t": 16.016, "case": "case-05", "kind": "ops", "message": "GET  /flights/AK808                                 200  15ms"}
+{"t": 16.031, "case": "case-05", "kind": "ops", "message": "GET  /entitlements/calculate                        200  14ms"}
+{"t": 16.035, "case": "case-05", "kind": "ops", "message": "GET  /customers/CUS-10006/history                   200  3ms"}
+{"t": 16.035, "case": "case-05", "kind": "info", "message": "identity CONFIRMED AER-9L5D2R  S2.1(a) booking reference and surname"}
+{"t": 16.035, "case": "case-05", "kind": "phase", "message": "hard bars"}
+{"t": 16.063, "case": "case-05", "kind": "ops", "message": "POST /escalations                                   201  27ms"}
+{"t": 16.063, "case": "case-05", "kind": "phase", "message": "agent -- gpt-5"}
+{"t": 16.064, "case": "case-05", "kind": "llm", "message": "turn 1/14 requesting..."}
+{"t": 55.067, "case": "case-05", "kind": "llm", "message": "turn 1  gpt-5  in=11700 (cached 2432) out=2669"}
+{"t": 55.067, "case": "case-05", "kind": "tool", "message": "search_availability        {\"from_iata\": \"EDI\", \"to_iata\": \"AMS\", \"date\": \"2026-08-04\", \"after\": null}"}
+{"t": 55.091, "case": "case-05", "kind": "ops", "message": "GET  /flights/availability                          503  24ms  retry 1/3"}
+{"t": 57.722, "case": "case-05", "kind": "ops", "message": "GET  /flights/availability                          200  2229ms"}
+{"t": 57.723, "case": "case-05", "kind": "llm", "message": "turn 2/14 requesting..."}
+{"t": 77.915, "case": "case-05", "kind": "llm", "message": "turn 2  gpt-5  in=12606 (cached 13952) out=1455"}
+{"t": 77.915, "case": "case-05", "kind": "tool", "message": "search_availability        {\"from_iata\": \"EDI\", \"to_iata\": \"AMS\", \"date\": \"2026-08-04\", \"after\": \"10:30\"}"}
+{"t": 80.145, "case": "case-05", "kind": "ops", "message": "GET  /flights/availability                          200  2230ms"}
+{"t": 80.147, "case": "case-05", "kind": "llm", "message": "turn 3/14 requesting..."}
+{"t": 143.256, "case": "case-05", "kind": "llm", "message": "turn 3  gpt-5  in=13511 (cached 26368) out=4046"}
+{"t": 143.256, "case": "case-05", "kind": "tool", "message": "escalate                   {\"summary\": \"Identity confirmed via booking ref AER-9L5D2R and surname. AK808 EDI\\u2192AMS on 2026-08-03 was cancelled. Operational recor..."}
+{"t": 143.26, "case": "case-05", "kind": "ops", "message": "GET  /_audit                                        200  4ms"}
+{"t": 143.261, "case": "case-05", "kind": "gate", "message": "approved escalation"}
+{"t": 143.263, "case": "case-05", "kind": "ops", "message": "POST /escalations                                   201  2ms"}
+{"t": 143.263, "case": "case-05", "kind": "action", "message": "escalation DONE     GENERAL"}
+{"t": 143.263, "case": "case-05", "kind": "llm", "message": "turn 4/14 requesting..."}
+{"t": 214.757, "case": "case-05", "kind": "llm", "message": "turn 4  gpt-5  in=14236 (cached 39680) out=4524"}
+{"t": 214.758, "case": "case-05", "kind": "tool", "message": "finish                     {\"summary\": \"Identity confirmed via booking ref AER-9L5D2R + surname. AK808 (EDI\\u2013AMS, 2026-08-03) cancelled. Operational record caus..."}
+{"t": 214.759, "case": "case-05", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-06", "kind": "case", "message": "case-06 starting"}
+{"t": 0.0, "case": "case-06", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 31.304, "case": "case-06", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2914 out=3167  $0.00666"}
+{"t": 31.304, "case": "case-06", "kind": "phase", "message": "identity + dossier"}
+{"t": 31.307, "case": "case-06", "kind": "ops", "message": "GET  /bookings/search                               200  1ms"}
+{"t": 31.333, "case": "case-06", "kind": "ops", "message": "GET  /bookings/search                               200  25ms"}
+{"t": 31.349, "case": "case-06", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 31.364, "case": "case-06", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 31.38, "case": "case-06", "kind": "ops", "message": "GET  /bookings/AER-2Q8W4N                           200  15ms"}
+{"t": 31.41, "case": "case-06", "kind": "ops", "message": "GET  /flights/AK155                                 200  26ms"}
+{"t": 31.426, "case": "case-06", "kind": "ops", "message": "GET  /entitlements/calculate                        200  15ms"}
+{"t": 31.442, "case": "case-06", "kind": "ops", "message": "GET  /customers/CUS-10007/history                   200  16ms"}
+{"t": 31.442, "case": "case-06", "kind": "info", "message": "identity CONFIRMED AER-2Q8W4N  S2.1(a) booking reference and surname"}
+{"t": 31.442, "case": "case-06", "kind": "phase", "message": "hard bars"}
+{"t": 31.442, "case": "case-06", "kind": "phase", "message": "agent -- gpt-5"}
+{"t": 31.443, "case": "case-06", "kind": "llm", "message": "turn 1/14 requesting..."}
+{"t": 62.638, "case": "case-06", "kind": "llm", "message": "turn 1  gpt-5  in=12094 (cached 0) out=2047"}
+{"t": 62.639, "case": "case-06", "kind": "tool", "message": "pay_compensation           {\"passenger_ids\": [\"P1\"], \"reason\": \"Statutory compensation for delay on AK155 (LGW-DUB) 2026-08-06\", \"rationale\": \"Compensation payable ..."}
+{"t": 62.665, "case": "case-06", "kind": "ops", "message": "GET  /_audit                                        200  26ms"}
+{"t": 62.666, "case": "case-06", "kind": "gate", "message": "approved compensation"}
+{"t": 62.68, "case": "case-06", "kind": "ops", "message": "POST /payments/compensation                         201  14ms"}
+{"t": 62.68, "case": "case-06", "kind": "action", "message": "compensation DONE     220.0"}
+{"t": 62.68, "case": "case-06", "kind": "llm", "message": "turn 2/14 requesting..."}
+{"t": 90.662, "case": "case-06", "kind": "llm", "message": "turn 2  gpt-5  in=12341 (cached 11904) out=2581"}
+{"t": 90.67, "case": "case-06", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-07", "kind": "case", "message": "case-07 starting"}
+{"t": 0.0, "case": "case-07", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 20.944, "case": "case-07", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2761 out=1862  $0.00401"}
+{"t": 20.944, "case": "case-07", "kind": "phase", "message": "identity + dossier"}
+{"t": 20.958, "case": "case-07", "kind": "ops", "message": "GET  /bookings/search                               200  13ms"}
+{"t": 20.973, "case": "case-07", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 20.975, "case": "case-07", "kind": "ops", "message": "GET  /bookings/search                               200  1ms"}
+{"t": 20.988, "case": "case-07", "kind": "ops", "message": "GET  /bookings/search                               200  13ms"}
+{"t": 21.004, "case": "case-07", "kind": "ops", "message": "GET  /bookings/AER-6H1Z7C                           200  16ms"}
+{"t": 21.02, "case": "case-07", "kind": "ops", "message": "GET  /flights/AK307                                 200  15ms"}
+{"t": 21.036, "case": "case-07", "kind": "ops", "message": "GET  /entitlements/calculate                        200  14ms"}
+{"t": 21.051, "case": "case-07", "kind": "ops", "message": "GET  /customers/CUS-10008/history                   200  14ms"}
+{"t": 21.051, "case": "case-07", "kind": "info", "message": "identity CONFIRMED AER-6H1Z7C  S2.1(a) booking reference and surname"}
+{"t": 21.051, "case": "case-07", "kind": "phase", "message": "hard bars"}
+{"t": 21.067, "case": "case-07", "kind": "ops", "message": "POST /escalations                                   201  16ms"}
+{"t": 21.083, "case": "case-07", "kind": "ops", "message": "POST /escalations                                   201  15ms"}
+{"t": 21.083, "case": "case-07", "kind": "phase", "message": "agent -- gpt-5"}
+{"t": 21.085, "case": "case-07", "kind": "llm", "message": "turn 1/14 requesting..."}
+{"t": 56.243, "case": "case-07", "kind": "llm", "message": "turn 1  gpt-5  in=12149 (cached 2432) out=2538"}
+{"t": 56.243, "case": "case-07", "kind": "tool", "message": "pay_compensation           {\"passenger_ids\": [\"P1\"], \"reason\": \"Statutory compensation for AK307 (LHR\\u2013MAD) on 2026-08-02: flight cancelled, passenger re-routed..."}
+{"t": 56.273, "case": "case-07", "kind": "ops", "message": "GET  /_audit                                        200  29ms"}
+{"t": 56.274, "case": "case-07", "kind": "gate", "message": "approved compensation"}
+{"t": 56.3, "case": "case-07", "kind": "ops", "message": "POST /payments/compensation                         201  25ms"}
+{"t": 56.3, "case": "case-07", "kind": "action", "message": "compensation DONE     220.0"}
+{"t": 56.3, "case": "case-07", "kind": "llm", "message": "turn 2/14 requesting..."}
+{"t": 84.768, "case": "case-07", "kind": "llm", "message": "turn 2  gpt-5  in=12461 (cached 14464) out=2189"}
+{"t": 84.769, "case": "case-07", "kind": "tool", "message": "finish                     {\"summary\": \"Identity confirmed via booking ref and surname (S2.1a). AK307 (LHR\\u2013MAD) on 2026-08-02 cancelled for TECHNICAL; passenge..."}
+{"t": 84.771, "case": "case-07", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-08", "kind": "case", "message": "case-08 starting"}
+{"t": 0.0, "case": "case-08", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 16.407, "case": "case-08", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2835 out=1771  $0.00385"}
+{"t": 16.407, "case": "case-08", "kind": "phase", "message": "identity + dossier"}
+{"t": 16.429, "case": "case-08", "kind": "ops", "message": "GET  /bookings/search                               200  22ms"}
+{"t": 16.434, "case": "case-08", "kind": "ops", "message": "GET  /bookings/search                               200  3ms"}
+{"t": 16.46, "case": "case-08", "kind": "ops", "message": "GET  /bookings/search                               200  26ms"}
+{"t": 16.464, "case": "case-08", "kind": "ops", "message": "GET  /bookings/search                               200  3ms"}
+{"t": 16.493, "case": "case-08", "kind": "ops", "message": "GET  /bookings/AER-3B7Y5K                           200  28ms"}
+{"t": 16.496, "case": "case-08", "kind": "ops", "message": "GET  /flights/AK640                                 200  3ms"}
+{"t": 16.523, "case": "case-08", "kind": "ops", "message": "GET  /entitlements/calculate                        200  27ms"}
+{"t": 16.539, "case": "case-08", "kind": "ops", "message": "GET  /customers/CUS-10009/history                   200  15ms"}
+{"t": 16.539, "case": "case-08", "kind": "info", "message": "identity CONFIRMED AER-3B7Y5K  S2.1(a) booking reference and surname"}
+{"t": 16.539, "case": "case-08", "kind": "phase", "message": "hard bars"}
+{"t": 16.555, "case": "case-08", "kind": "ops", "message": "POST /escalations                                   201  15ms"}
+{"t": 16.555, "case": "case-08", "kind": "phase", "message": "agent -- gpt-5"}
+{"t": 16.556, "case": "case-08", "kind": "llm", "message": "turn 1/14 requesting..."}
+{"t": 36.092, "case": "case-08", "kind": "llm", "message": "turn 1  gpt-5  in=12042 (cached 2432) out=1345"}
+{"t": 36.092, "case": "case-08", "kind": "tool", "message": "pay_compensation           {\"passenger_ids\": [\"P1\"], \"reason\": \"Cancellation with re-routing; TECHNICAL cause within Aerlink control; arrival delay at final destina..."}
+{"t": 36.116, "case": "case-08", "kind": "ops", "message": "GET  /_audit                                        200  23ms"}
+{"t": 36.117, "case": "case-08", "kind": "gate", "message": "approved compensation"}
+{"t": 36.145, "case": "case-08", "kind": "ops", "message": "POST /payments/compensation                         201  27ms"}
+{"t": 36.145, "case": "case-08", "kind": "action", "message": "compensation DONE     415.0"}
+{"t": 36.145, "case": "case-08", "kind": "llm", "message": "turn 2/14 requesting..."}
+{"t": 67.259, "case": "case-08", "kind": "llm", "message": "turn 2  gpt-5  in=12304 (cached 2432) out=2921"}
+{"t": 67.261, "case": "case-08", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-09", "kind": "case", "message": "case-09 starting"}
+{"t": 0.0, "case": "case-09", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 11.632, "case": "case-09", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2700 out=1601  $0.00347"}
+{"t": 11.632, "case": "case-09", "kind": "phase", "message": "identity + dossier"}
+{"t": 11.653, "case": "case-09", "kind": "ops", "message": "GET  /bookings/search                               200  21ms"}
+{"t": 11.669, "case": "case-09", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 11.684, "case": "case-09", "kind": "ops", "message": "GET  /bookings/search                               200  14ms"}
+{"t": 11.701, "case": "case-09", "kind": "ops", "message": "GET  /bookings/search                               200  16ms"}
+{"t": 11.704, "case": "case-09", "kind": "ops", "message": "GET  /bookings/AER-8N4V6J                           200  2ms"}
+{"t": 11.732, "case": "case-09", "kind": "ops", "message": "GET  /flights/AK512                                 200  26ms"}
+{"t": 11.747, "case": "case-09", "kind": "ops", "message": "GET  /entitlements/calculate                        200  15ms"}
+{"t": 11.763, "case": "case-09", "kind": "ops", "message": "GET  /customers/CUS-10010/history                   200  15ms"}
+{"t": 11.763, "case": "case-09", "kind": "info", "message": "identity CONFIRMED AER-8N4V6J  S2.1(a) booking reference and surname"}
+{"t": 11.763, "case": "case-09", "kind": "phase", "message": "hard bars"}
+{"t": 11.763, "case": "case-09", "kind": "phase", "message": "agent -- gpt-5"}
+{"t": 11.765, "case": "case-09", "kind": "llm", "message": "turn 1/14 requesting..."}
+{"t": 34.121, "case": "case-09", "kind": "llm", "message": "turn 1  gpt-5  in=11687 (cached 2432) out=1306"}
+{"t": 34.121, "case": "case-09", "kind": "tool", "message": "search_availability        {\"from_iata\": \"LGW\", \"to_iata\": \"DXB\", \"date\": \"2026-08-07\", \"after\": null}"}
+{"t": 34.144, "case": "case-09", "kind": "ops", "message": "GET  /flights/availability                          503  21ms  retry 1/3"}
+{"t": 36.389, "case": "case-09", "kind": "ops", "message": "GET  /flights/availability                          200  1844ms"}
+{"t": 36.39, "case": "case-09", "kind": "tool", "message": "check_hotel_allocation     {\"station\": \"LGW\", \"night\": \"2026-08-06\"}"}
+{"t": 36.416, "case": "case-09", "kind": "ops", "message": "GET  /stations/LGW/hotel-allocation                 200  25ms"}
+{"t": 36.416, "case": "case-09", "kind": "llm", "message": "turn 2/14 requesting..."}
+{"t": 76.261, "case": "case-09", "kind": "llm", "message": "turn 2  gpt-5  in=12707 (cached 13952) out=3356"}
+{"t": 76.261, "case": "case-09", "kind": "tool", "message": "issue_hotel_voucher        {\"station\": \"LGW\", \"night\": \"2026-08-06\", \"passenger_ids\": [\"P1\"], \"rationale\": \"Duty of care triggered immediately on cancellation (S4.1..."}
+{"t": 76.285, "case": "case-09", "kind": "ops", "message": "GET  /stations/LGW/hotel-allocation                 200  24ms"}
+{"t": 76.303, "case": "case-09", "kind": "ops", "message": "GET  /_audit                                        200  17ms"}
+{"t": 76.303, "case": "case-09", "kind": "gate", "message": "approved hotel_voucher"}
+{"t": 76.332, "case": "case-09", "kind": "ops", "message": "POST /vouchers/hotel                                201  28ms"}
+{"t": 76.332, "case": "case-09", "kind": "action", "message": "hotel_voucher DONE     "}
+{"t": 76.332, "case": "case-09", "kind": "llm", "message": "turn 3/14 requesting..."}
+{"t": 113.406, "case": "case-09", "kind": "llm", "message": "turn 3  gpt-5  in=12914 (cached 26496) out=3505"}
+{"t": 113.406, "case": "case-09", "kind": "tool", "message": "search_availability        {\"from_iata\": \"LGW\", \"to_iata\": \"DXB\", \"date\": \"2026-08-07\", \"after\": \"17:00\"}"}
+{"t": 115.248, "case": "case-09", "kind": "ops", "message": "GET  /flights/availability                          200  1841ms"}
+{"t": 115.248, "case": "case-09", "kind": "llm", "message": "turn 4/14 requesting..."}
+{"t": 163.978, "case": "case-09", "kind": "llm", "message": "turn 4  gpt-5  in=13858 (cached 39296) out=4326"}
+{"t": 163.978, "case": "case-09", "kind": "tool", "message": "finish                     {\"summary\": \"Identity confirmed via booking ref + surname (S2.1a). AK512 LGW\\u2013DXB on 2026-08-06 is cancelled; ops cause TECHNICAL. Is..."}
+{"t": 163.979, "case": "case-09", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-10", "kind": "case", "message": "case-10 starting"}
+{"t": 0.0, "case": "case-10", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 50.629, "case": "case-10", "kind": "llm", "message": "extract complete  gpt-5-mini  in=3957 out=7960  $0.01651"}
+{"t": 50.629, "case": "case-10", "kind": "phase", "message": "identity + dossier"}
+{"t": 50.644, "case": "case-10", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 50.661, "case": "case-10", "kind": "ops", "message": "GET  /bookings/search                               200  16ms"}
+{"t": 50.676, "case": "case-10", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 50.692, "case": "case-10", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 50.708, "case": "case-10", "kind": "ops", "message": "GET  /bookings/AER-5C9X3T                           200  16ms"}
+{"t": 50.724, "case": "case-10", "kind": "ops", "message": "GET  /flights/AK229                                 200  16ms"}
+{"t": 50.728, "case": "case-10", "kind": "ops", "message": "GET  /entitlements/calculate                        200  3ms"}
+{"t": 50.731, "case": "case-10", "kind": "ops", "message": "GET  /customers/CUS-10011/history                   200  3ms"}
+{"t": 50.731, "case": "case-10", "kind": "info", "message": "identity CONFIRMED AER-5C9X3T  S2.1(a) booking reference and surname"}
+{"t": 50.731, "case": "case-10", "kind": "phase", "message": "hard bars"}
+{"t": 50.736, "case": "case-10", "kind": "ops", "message": "POST /escalations                                   201  3ms"}
+{"t": 50.736, "case": "case-10", "kind": "phase", "message": "agent -- gpt-5"}
+{"t": 50.739, "case": "case-10", "kind": "llm", "message": "turn 1/14 requesting..."}
+{"t": 71.301, "case": "case-10", "kind": "llm", "message": "turn 1  gpt-5  in=13698 (cached 2432) out=1775"}
+{"t": 71.301, "case": "case-10", "kind": "tool", "message": "search_availability        {\"from_iata\": \"LHR\", \"to_iata\": \"GVA\", \"date\": \"2026-08-10\", \"after\": null}"}
+{"t": 71.315, "case": "case-10", "kind": "ops", "message": "GET  /flights/availability                          503  14ms  retry 1/3"}
+{"t": 74.219, "case": "case-10", "kind": "ops", "message": "GET  /flights/availability                          200  2502ms"}
+{"t": 74.219, "case": "case-10", "kind": "llm", "message": "turn 2/14 requesting..."}
+{"t": 113.665, "case": "case-10", "kind": "llm", "message": "turn 2  gpt-5  in=14617 (cached 16000) out=3604"}
+{"t": 113.665, "case": "case-10", "kind": "tool", "message": "rebook                     {\"passenger_ids\": [\"P1\"], \"option_id\": \"OPT-CE02C1D4BE\", \"flight_no\": \"AK151\", \"date\": \"2026-08-10\", \"cabin\": \"ECONOMY\", \"fare_gbp\": 0, \"..."}
+{"t": 113.694, "case": "case-10", "kind": "ops", "message": "GET  /_audit                                        200  28ms"}
+{"t": 113.694, "case": "case-10", "kind": "gate", "message": "approved rebooking"}
+{"t": 113.707, "case": "case-10", "kind": "ops", "message": "POST /rebooking                                     201  12ms"}
+{"t": 113.707, "case": "case-10", "kind": "action", "message": "rebooking DONE     AK151"}
+{"t": 113.707, "case": "case-10", "kind": "llm", "message": "turn 3/14 requesting..."}
+{"t": 149.982, "case": "case-10", "kind": "llm", "message": "turn 3  gpt-5  in=14899 (cached 30464) out=3008"}
+{"t": 149.982, "case": "case-10", "kind": "tool", "message": "pay_compensation           {\"passenger_ids\": [\"P1\"], \"reason\": \"AK229 on 2026-08-05 cancelled for CREW. Passenger elected re-routing at later date (2026-08-10) and ..."}
+{"t": 149.987, "case": "case-10", "kind": "ops", "message": "GET  /_audit                                        200  5ms"}
+{"t": 149.987, "case": "case-10", "kind": "gate", "message": "REFUSED  compensation   S5.1"}
+{"t": 150.007, "case": "case-10", "kind": "ops", "message": "POST /escalations                                   201  20ms"}
+{"t": 150.007, "case": "case-10", "kind": "action", "message": "compensation REFUSED  -> SUPERVISOR"}
+{"t": 150.007, "case": "case-10", "kind": "llm", "message": "turn 4/14 requesting..."}
+{"t": 217.634, "case": "case-10", "kind": "llm", "message": "turn 4  gpt-5  in=15145 (cached 45184) out=5477"}
+{"t": 217.634, "case": "case-10", "kind": "tool", "message": "escalate                   {\"summary\": \"AER-5C9X3T, Greg Whitmore. AK229 (LHR-GVA) on 2026-08-05 cancelled (cause_code=CREW). Passenger withdrew an initial refund r..."}
+{"t": 217.658, "case": "case-10", "kind": "ops", "message": "GET  /_audit                                        200  24ms"}
+{"t": 217.658, "case": "case-10", "kind": "gate", "message": "approved escalation"}
+{"t": 217.67, "case": "case-10", "kind": "ops", "message": "POST /escalations                                   201  12ms"}
+{"t": 217.671, "case": "case-10", "kind": "action", "message": "escalation DONE     GENERAL"}
+{"t": 217.671, "case": "case-10", "kind": "llm", "message": "turn 5/14 requesting..."}
+{"t": 259.775, "case": "case-10", "kind": "llm", "message": "turn 5  gpt-5  in=15916 (cached 60160) out=3727"}
+{"t": 259.776, "case": "case-10", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-11", "kind": "case", "message": "case-11 starting"}
+{"t": 0.0, "case": "case-11", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 16.369, "case": "case-11", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2852 out=2260  $0.00483"}
+{"t": 16.369, "case": "case-11", "kind": "phase", "message": "identity + dossier"}
+{"t": 16.373, "case": "case-11", "kind": "ops", "message": "GET  /bookings/search                               200  4ms"}
+{"t": 16.391, "case": "case-11", "kind": "ops", "message": "GET  /bookings/search                               200  17ms"}
+{"t": 16.407, "case": "case-11", "kind": "ops", "message": "GET  /bookings/search                               200  16ms"}
+{"t": 16.412, "case": "case-11", "kind": "ops", "message": "GET  /bookings/search                               200  4ms"}
+{"t": 16.438, "case": "case-11", "kind": "ops", "message": "GET  /bookings/search                               200  26ms"}
+{"t": 16.453, "case": "case-11", "kind": "ops", "message": "GET  /bookings/AER-7P4R2M                           200  15ms"}
+{"t": 16.468, "case": "case-11", "kind": "ops", "message": "GET  /flights/AK150                                 200  15ms"}
+{"t": 16.484, "case": "case-11", "kind": "ops", "message": "GET  /entitlements/calculate                        200  15ms"}
+{"t": 16.5, "case": "case-11", "kind": "ops", "message": "GET  /customers/CUS-10012/history                   200  16ms"}
+{"t": 16.5, "case": "case-11", "kind": "info", "message": "identity CONFIRMED AER-7P4R2M  S2.1(a) booking reference and surname"}
+{"t": 16.5, "case": "case-11", "kind": "phase", "message": "hard bars"}
+{"t": 16.503, "case": "case-11", "kind": "ops", "message": "POST /escalations                                   201  3ms"}
+{"t": 16.503, "case": "case-11", "kind": "phase", "message": "agent -- gpt-5"}
+{"t": 16.504, "case": "case-11", "kind": "llm", "message": "turn 1/14 requesting..."}
+{"t": 47.708, "case": "case-11", "kind": "llm", "message": "turn 1  gpt-5  in=11825 (cached 2432) out=1981"}
+{"t": 47.708, "case": "case-11", "kind": "tool", "message": "check_hotel_allocation     {\"station\": \"LGW\", \"night\": \"2026-08-06\"}"}
+{"t": 47.733, "case": "case-11", "kind": "ops", "message": "GET  /stations/LGW/hotel-allocation                 200  25ms"}
+{"t": 47.733, "case": "case-11", "kind": "tool", "message": "search_availability        {\"from_iata\": \"LGW\", \"to_iata\": \"FCO\", \"date\": \"2026-08-07\", \"after\": null}"}
+{"t": 47.736, "case": "case-11", "kind": "ops", "message": "GET  /flights/availability                          503  3ms  retry 1/3"}
+{"t": 50.482, "case": "case-11", "kind": "ops", "message": "GET  /flights/availability                          200  2345ms"}
+{"t": 50.482, "case": "case-11", "kind": "tool", "message": "search_partner_availability {\"from_iata\": \"LGW\", \"to_iata\": \"FCO\", \"date\": \"2026-08-07\"}"}
+{"t": 52.803, "case": "case-11", "kind": "ops", "message": "GET  /flights/availability/partners                 200  2320ms"}
+{"t": 52.803, "case": "case-11", "kind": "llm", "message": "turn 2/14 requesting..."}
+{"t": 105.264, "case": "case-11", "kind": "llm", "message": "turn 2  gpt-5  in=13761 (cached 14080) out=4076"}
+{"t": 105.264, "case": "case-11", "kind": "tool", "message": "escalate                   {\"summary\": \"AK150 LGW\\u2013FCO on 2026-08-06 is recorded CANCELLED, cause TECHNICAL (within Aerlink control). Passenger Kenneth Braithwa..."}
+{"t": 105.293, "case": "case-11", "kind": "ops", "message": "GET  /_audit                                        200  29ms"}
+{"t": 105.293, "case": "case-11", "kind": "gate", "message": "approved escalation"}
+{"t": 105.322, "case": "case-11", "kind": "ops", "message": "POST /escalations                                   201  29ms"}
+{"t": 105.322, "case": "case-11", "kind": "action", "message": "escalation DONE     SUPERVISOR"}
+{"t": 105.322, "case": "case-11", "kind": "llm", "message": "turn 3/14 requesting..."}
+{"t": 147.889, "case": "case-11", "kind": "llm", "message": "turn 3  gpt-5  in=14546 (cached 27648) out=3043"}
+{"t": 147.889, "case": "case-11", "kind": "tool", "message": "escalate                   {\"summary\": \"Passenger Kenneth Braithwaite reports a separate issue: a camel-coloured overcoat (Selfridges label, initials in inside pock..."}
+{"t": 147.92, "case": "case-11", "kind": "ops", "message": "GET  /_audit                                        200  29ms"}
+{"t": 147.92, "case": "case-11", "kind": "gate", "message": "approved escalation"}
+{"t": 147.948, "case": "case-11", "kind": "ops", "message": "POST /escalations                                   201  28ms"}
+{"t": 147.948, "case": "case-11", "kind": "action", "message": "escalation DONE     LOST_PROPERTY"}
+{"t": 147.948, "case": "case-11", "kind": "llm", "message": "turn 4/14 requesting..."}
+{"t": 189.539, "case": "case-11", "kind": "llm", "message": "turn 4  gpt-5  in=15057 (cached 41984) out=3424"}
+{"t": 189.539, "case": "case-11", "kind": "tool", "message": "pay_goodwill               {\"amount_gbp\": 50, \"reason\": \"Acknowledge poor handling of separate lost property case: passenger reports multiple calls since March with..."}
+{"t": 189.556, "case": "case-11", "kind": "ops", "message": "GET  /_audit                                        200  17ms"}
+{"t": 189.556, "case": "case-11", "kind": "gate", "message": "approved goodwill"}
+{"t": 189.559, "case": "case-11", "kind": "ops", "message": "POST /payments/goodwill                             201  3ms"}
+{"t": 189.559, "case": "case-11", "kind": "action", "message": "goodwill  DONE     50"}
+{"t": 189.559, "case": "case-11", "kind": "llm", "message": "turn 5/14 requesting..."}
+{"t": 244.814, "case": "case-11", "kind": "llm", "message": "turn 5  gpt-5  in=15273 (cached 56832) out=4976"}
+{"t": 244.817, "case": "case-11", "kind": "phase", "message": "record"}
+{"t": 0.0, "case": "case-12", "kind": "case", "message": "case-12 starting"}
+{"t": 0.0, "case": "case-12", "kind": "phase", "message": "extract -- gpt-5-mini"}
+{"t": 15.096, "case": "case-12", "kind": "llm", "message": "extract complete  gpt-5-mini  in=2749 out=2296  $0.00488"}
+{"t": 15.096, "case": "case-12", "kind": "phase", "message": "identity + dossier"}
+{"t": 15.112, "case": "case-12", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 15.128, "case": "case-12", "kind": "ops", "message": "GET  /bookings/search                               200  15ms"}
+{"t": 15.143, "case": "case-12", "kind": "ops", "message": "GET  /bookings/search                               200  14ms"}
+{"t": 15.16, "case": "case-12", "kind": "ops", "message": "GET  /bookings/search                               200  16ms"}
+{"t": 15.164, "case": "case-12", "kind": "ops", "message": "GET  /bookings/search                               200  3ms"}
+{"t": 15.167, "case": "case-12", "kind": "ops", "message": "GET  /bookings/AER-1F6G8P                           200  3ms"}
+{"t": 15.191, "case": "case-12", "kind": "ops", "message": "GET  /flights/AK418                                 200  23ms"}
+{"t": 15.206, "case": "case-12", "kind": "ops", "message": "GET  /entitlements/calculate                        200  15ms"}
+{"t": 15.222, "case": "case-12", "kind": "ops", "message": "GET  /customers/CUS-10013/history                   200  15ms"}
+{"t": 15.222, "case": "case-12", "kind": "info", "message": "identity CONFIRMED AER-1F6G8P  S2.1(a) booking reference and surname"}
+{"t": 15.222, "case": "case-12", "kind": "phase", "message": "hard bars"}
+{"t": 15.222, "case": "case-12", "kind": "phase", "message": "agent -- gpt-5"}
+{"t": 15.223, "case": "case-12", "kind": "llm", "message": "turn 1/14 requesting..."}
+{"t": 29.124, "case": "case-12", "kind": "llm", "message": "turn 1  gpt-5  in=11994 (cached 2432) out=1180"}
+{"t": 29.124, "case": "case-12", "kind": "tool", "message": "search_availability        {\"from_iata\": \"BCN\", \"to_iata\": \"LHR\", \"date\": \"2026-08-06\", \"after\": \"00:00\"}"}
+{"t": 29.129, "case": "case-12", "kind": "ops", "message": "GET  /flights/availability                          503  5ms  retry 1/3"}
+{"t": 31.162, "case": "case-12", "kind": "ops", "message": "GET  /flights/availability                          200  1632ms"}
+{"t": 31.162, "case": "case-12", "kind": "tool", "message": "check_hotel_allocation     {\"station\": \"BCN\", \"night\": \"2026-08-05\"}"}
+{"t": 31.182, "case": "case-12", "kind": "ops", "message": "GET  /stations/BCN/hotel-allocation                 200  19ms"}
+{"t": 31.182, "case": "case-12", "kind": "llm", "message": "turn 2/14 requesting..."}
+{"t": 69.309, "case": "case-12", "kind": "llm", "message": "turn 2  gpt-5  in=13021 (cached 14208) out=3452"}
+{"t": 69.309, "case": "case-12", "kind": "tool", "message": "rebook                     {\"passenger_ids\": [\"P1\", \"P2\"], \"option_id\": \"OPT-B2D9ADDE62\", \"flight_no\": \"AK612\", \"date\": \"2026-08-06\", \"cabin\": \"ECONOMY\", \"fare_gbp\"..."}
+{"t": 69.337, "case": "case-12", "kind": "ops", "message": "GET  /_audit                                        200  28ms"}
+{"t": 69.338, "case": "case-12", "kind": "gate", "message": "approved rebooking"}
+{"t": 69.366, "case": "case-12", "kind": "ops", "message": "POST /rebooking                                     201  28ms"}
+{"t": 69.366, "case": "case-12", "kind": "action", "message": "rebooking DONE     AK612"}
+{"t": 69.366, "case": "case-12", "kind": "llm", "message": "turn 3/14 requesting..."}
+{"t": 118.264, "case": "case-12", "kind": "llm", "message": "turn 3  gpt-5  in=13282 (cached 27008) out=3354"}
+{"t": 118.264, "case": "case-12", "kind": "tool", "message": "issue_hotel_voucher        {\"station\": \"BCN\", \"night\": \"2026-08-05\", \"passenger_ids\": [\"P1\", \"P2\"], \"rationale\": \"S4.1: Flight cancelled, overnight stay became nece..."}
+{"t": 118.286, "case": "case-12", "kind": "ops", "message": "GET  /stations/BCN/hotel-allocation                 200  22ms"}
+{"t": 118.304, "case": "case-12", "kind": "ops", "message": "GET  /_audit                                        200  18ms"}
+{"t": 118.305, "case": "case-12", "kind": "gate", "message": "approved hotel_voucher"}
+{"t": 118.333, "case": "case-12", "kind": "ops", "message": "POST /vouchers/hotel                                201  27ms"}
+{"t": 118.333, "case": "case-12", "kind": "action", "message": "hotel_voucher DONE     "}
+{"t": 118.333, "case": "case-12", "kind": "llm", "message": "turn 4/14 requesting..."}
+{"t": 148.695, "case": "case-12", "kind": "llm", "message": "turn 4  gpt-5  in=13491 (cached 40064) out=2471"}
+{"t": 148.696, "case": "case-12", "kind": "tool", "message": "pay_compensation           {\"passenger_ids\": [\"P1\", \"P2\"], \"reason\": \"Cancellation with cause within Aerlink control; re-routed arrival delay exceeds 3 hours.\", \"ra..."}
+{"t": 148.721, "case": "case-12", "kind": "ops", "message": "GET  /_audit                                        200  25ms"}
+{"t": 148.722, "case": "case-12", "kind": "gate", "message": "REFUSED  compensation   S5.1"}
+{"t": 148.734, "case": "case-12", "kind": "ops", "message": "POST /escalations                                   201  12ms"}
+{"t": 148.734, "case": "case-12", "kind": "action", "message": "compensation REFUSED  -> SUPERVISOR"}
+{"t": 148.734, "case": "case-12", "kind": "llm", "message": "turn 5/14 requesting..."}
+{"t": 191.11, "case": "case-12", "kind": "llm", "message": "turn 5  gpt-5  in=13715 (cached 53376) out=3790"}
+{"t": 191.112, "case": "case-12", "kind": "phase", "message": "record"}
+{"t": 191.142, "case": "case-12", "kind": "ops", "message": "GET  /_audit                                        200  28ms"}

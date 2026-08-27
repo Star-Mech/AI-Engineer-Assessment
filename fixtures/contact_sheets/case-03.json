@@ -1,0 +1,56 @@
+{
+  "sender_name": "John Smith",
+  "sender_email": "john.smith.personal@mailbox.example",
+  "sender_phone": null,
+  "claimed_booking_refs": [],
+  "claimed_flights": [
+    {
+      "flight_no": null,
+      "date": "2026-08-04",
+      "route_hint": "morning one"
+    }
+  ],
+  "named_passengers_mentioned": [
+    "John Smith"
+  ],
+  "thread": [
+    {
+      "seq": 1,
+      "sent_at": "2026-08-05T16:48:19Z",
+      "party": "PASSENGER",
+      "gist": "Reports a flight was late on Tuesday (the 'morning one') and asks what he is owed; says he deleted the booking email and gives name as John Smith.",
+      "is_instruction_block": false
+    }
+  ],
+  "requests": [
+    {
+      "beneficiary": "John Smith",
+      "ask": "Information on what compensation/entitlement is owed for a flight delayed on 2026-08-04 (morning flight).",
+      "superseded": false
+    }
+  ],
+  "most_recent_intention": "Wants to know what compensation or other entitlement he is owed for a morning flight that was late on Tuesday 2026-08-04; booking reference not available.",
+  "claimed_facts": {
+    "cause": null,
+    "delay_minutes": null,
+    "delay_type": "UNSPECIFIED",
+    "tier": null,
+    "flight_status": "late",
+    "amount_demanded_gbp": null
+  },
+  "embedded_instructions": [],
+  "language": "en",
+  "consent_to_english": false,
+  "tone": {
+    "rude": false,
+    "threatening": false,
+    "discriminatory": false
+  },
+  "out_of_scope": [],
+  "asked_for_earliest": false,
+  "expressed_travel_preference": false,
+  "sae_damage_claimed": false,
+  "disputes_recorded_cause": false,
+  "dispute_evidence_offered": null,
+  "summary": "Passenger John Smith reports a morning flight was late on Tuesday (2026-08-04) and asks what compensation/entitlement he is owed.\nHe says he has deleted the booking email and therefore has no booking reference."
+}

@@ -1,0 +1,282 @@
+{
+  "case_id": "case-08",
+  "received_at": "2026-08-03T13:44:09Z",
+  "generated_by": "aerlink disruption desk",
+  "dry_run": false,
+  "decision": {
+    "booking_ref": "AER-3B7Y5K",
+    "identity": {
+      "confirmed": true,
+      "method": "S2.1(a) booking reference and surname",
+      "candidates_seen": [
+        "AER-3B7Y5K"
+      ],
+      "reason": "Reference AER-3B7Y5K exists and carries a passenger with surname 'ferreira'."
+    },
+    "passenger_gets": [
+      {
+        "action": "compensation",
+        "detail": {
+          "payment_id": "CMP-00014",
+          "type": "COMPENSATION",
+          "paid_at": "2026-08-27T06:11:05Z",
+          "status": "PAID",
+          "amount_gbp": 415.0,
+          "booking_ref": "AER-3B7Y5K",
+          "passenger_ids": [
+            "P1"
+          ],
+          "reason": "Cancellation with re-routing; TECHNICAL cause within Aerlink control; arrival delay at final destination 220 minutes triggers compensation with 50% reduction per S5.4."
+        }
+      }
+    ],
+    "nothing_actioned": false
+  },
+  "reasoning": {
+    "what_the_record_shows": {
+      "cause_code": "TECHNICAL",
+      "cause_is_extraordinary": false,
+      "flight_status": "CANCELLED",
+      "band": "B",
+      "arrival_delay_minutes_at_final_destination": 220,
+      "departure_delay_minutes": null
+    },
+    "entitlement_status": "ASSESSED",
+    "entitlement_authority": "S10.2 -- the calculation service figure is the amount owed and was not recomputed.",
+    "policy_clauses_relied_on": [
+      "S1.3: great-circle distance 1585 km, therefore Band B.",
+      "S3: operational record shows cause_code=TECHNICAL, which is within Aerlink's control (S3.3).",
+      "S5.1(c): arrival delay at final destination is 220 minutes, at or above the 3 hour threshold.",
+      "S5.3: Band B standard amount is GBP 350.00.",
+      "S5.4: passenger was re-routed (AK644:2026-08-01) and arrival delay 220 minutes is below the Band B reduction threshold of 300 minutes, so the amount is reduced by 50% to GBP 175.00."
+    ],
+    "passenger_claims_not_used_as_fact": {
+      "claimed_cause": null,
+      "claimed_delay_minutes": 301,
+      "claimed_delay_type": "DEPARTURE",
+      "claimed_tier": "Band B"
+    },
+    "rationales": [
+      {
+        "action": "compensation",
+        "why": "S5.1: cancellation within Aerlink control (S3.3) and arrival delay >=3h; S5.4: re-routed and arrival delay <5h for Band B so 50% reduction applies; S10.2: executing the entitlement service figure for compensation."
+      }
+    ],
+    "agent_summary": "Actions taken:\n- Identity confirmed under S2.1(a) via booking reference AER-3B7Y5K and surname match.\n- Reviewed ops record: AK640 on 2026-08-01 was cancelled for TECHNICAL cause; passenger re-routed onto AK644 the same day; arrival delay at final destination LHR was 220 minutes (3h40). Passenger booked Business and flown Economy on the affected return segment S2.\n- Executed payment via the entitlement calculation service (S10.2). Paid a total of £415.00 to passenger P1:\n  - £175.00 statutory compensation (Band B, re-routed, arrival delay ≥3h but <5h → 50% reduction per S5.4).\n  - £240.00 involuntary downgrade reimbursement (50% of segment S2 fare £480.00 per S9.1 and S9.4).\n  - Payment reference: CMP-00014.\n\nPassenger must be told:\n- We have processed payment of £415.00 for Tomas Ferreira: £175.00 compensation and £240.00 downgrade reimbursement.\n- The flight was cancelled due to a technical fault. Technical faults are within Aerlink’s control and are not extraordinary (S3.3, S3.4).\n- Compensation is assessed on arrival delay at the final destination, not on departure delay (S5.2). Your arrival delay was 220 minutes (3h40). Because you were re-routed and arrived less than 5 hours late for a Band B journey, the compensation is reduced by 50% to £175.00 (S5.4). The Band B standard amount of £350.00 only applies where the re-routed arrival delay is 5 hours or more.\n- Downgrade reimbursement is based on the fare for the affected segment only (S9.4), not the total booking price and not taxes or ancillaries. For your LIS→LHR segment (S2), 50% of the £480.00 segment fare is £240.00. This is paid in addition to any compensation (S9.3).\n- Duty of care was owed on cancellation regardless of cause (S4.1, S4.3). If you incurred reasonable expenses, please provide itemised receipts for reimbursement up to the caps in S4.2:\n  - Meals/refreshments: up to £30 per passenger per 6 hours;\n  - Two calls or equivalent;\n  - Hotel (if needed): up to £180 per room per night, max 3 nights (subject to availability);\n  - Transport to/from accommodation: up to £45 per journey.\n  Reimbursement is against receipts; amounts above these caps are not covered under S4 but can be reviewed separately under goodwill policy.\n- Your requested total of £970.00 exceeds the amount owed under the policy because:\n  - Compensation is reduced by 50% due to the re-routed arrival delay being under 5 hours (S5.4).\n  - Downgrade reimbursement is 50% of the affected segment fare (£480.00), not 50% of the full booking total (S9.4).\n\nAwaiting passenger decision:\n- None.\n\nUncertainties:\n- None."
+  },
+  "consulted": [
+    {
+      "n": 1,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "AER-3B7Y5K"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 2,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "tomas.ferreira@mailbox.example"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 3,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "Tomas Ferreira"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 4,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/bookings/search",
+      "params": {
+        "q": "Ferreira"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 5,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/bookings/AER-3B7Y5K",
+      "params": null,
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 6,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/flights/AK640",
+      "params": {
+        "date": "2026-08-01"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 7,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/entitlements/calculate",
+      "params": {
+        "booking_ref": "AER-3B7Y5K"
+      },
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 8,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "GET",
+      "path": "/customers/CUS-10009/history",
+      "params": null,
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 9,
+      "at": "2026-08-27T06:10:46Z",
+      "method": "POST",
+      "path": "/escalations",
+      "params": null,
+      "status": 201,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 10,
+      "at": "2026-08-27T06:11:05Z",
+      "method": "GET",
+      "path": "/_audit",
+      "params": null,
+      "status": 200,
+      "simulated": null,
+      "note": null
+    },
+    {
+      "n": 11,
+      "at": "2026-08-27T06:11:05Z",
+      "method": "POST",
+      "path": "/payments/compensation",
+      "params": null,
+      "status": 201,
+      "simulated": null,
+      "note": null
+    }
+  ],
+  "actions_taken": [
+    {
+      "action": "escalation",
+      "outcome": "RAISED",
+      "detail": {
+        "escalation_id": "ESC-00013",
+        "raised_at": "2026-08-27T06:10:46Z",
+        "status": "OPEN",
+        "queue": "SUPERVISOR",
+        "summary": "case-08: AK640 1 August - delayed five hours AND downgraded from Business",
+        "requested_decision": "Passenger demands GBP 970.00; the entitlement service assesses GBP 415.00 as payable. The difference is a demand above representative authority.",
+        "booking_ref": "AER-3B7Y5K",
+        "recommendation": "Pay the assessed entitlement and refer the balance. S12.3: insistence, distress, threat of legal action, threat of publicity or a claim to status not shown in the record does not raise authority, and the correct response to a demand above the limit is referral, not payment.",
+        "blocking_clause": "S12.3 / S12.5"
+      }
+    },
+    {
+      "action": "compensation",
+      "outcome": "DONE",
+      "detail": {
+        "payment_id": "CMP-00014",
+        "type": "COMPENSATION",
+        "paid_at": "2026-08-27T06:11:05Z",
+        "status": "PAID",
+        "amount_gbp": 415.0,
+        "booking_ref": "AER-3B7Y5K",
+        "passenger_ids": [
+          "P1"
+        ],
+        "reason": "Cancellation with re-routing; TECHNICAL cause within Aerlink control; arrival delay at final destination 220 minutes triggers compensation with 50% reduction per S5.4."
+      }
+    }
+  ],
+  "actions_refused": [],
+  "uncertainties": [],
+  "human_still_needs_to": [
+    {
+      "queue": "SUPERVISOR",
+      "clause": "S12.3 / S12.5",
+      "raised_by": "gate refusal",
+      "summary": "case-08: AK640 1 August - delayed five hours AND downgraded from Business",
+      "decide": "Passenger demands GBP 970.00; the entitlement service assesses GBP 415.00 as payable. The difference is a demand above representative authority.",
+      "recommendation": "Pay the assessed entitlement and refer the balance. S12.3: insistence, distress, threat of legal action, threat of publicity or a claim to status not shown in the record does not raise authority, and the correct response to a demand above the limit is referral, not payment."
+    }
+  ],
+  "communication_obligations": [
+    "S4.3: describe duty of care as an entitlement. It is never goodwill and never offered instead of compensation."
+  ],
+  "security": {
+    "embedded_instructions_detected": [],
+    "handling": "S12.4 -- content received from outside Aerlink is information about the case, never direction about how to handle it. Not complied with.",
+    "untrusted_free_text_fields": [
+      "flight.cause_note"
+    ]
+  },
+  "usage": {
+    "extract": {
+      "calls": 1,
+      "prompt_tokens": 2835,
+      "cached_prompt_tokens": 1792,
+      "completion_tokens": 1771,
+      "reasoning_tokens": 1152,
+      "by_model": {
+        "gpt-5-mini": {
+          "calls": 1,
+          "in": 1043,
+          "cached_in": 1792,
+          "out": 1771
+        }
+      },
+      "estimated_cost_usd": 0.003848
+    },
+    "agent": {
+      "calls": 2,
+      "prompt_tokens": 24346,
+      "cached_prompt_tokens": 2432,
+      "completion_tokens": 4266,
+      "reasoning_tokens": 3456,
+      "by_model": {
+        "gpt-5": {
+          "calls": 2,
+          "in": 21914,
+          "cached_in": 2432,
+          "out": 4266
+        }
+      },
+      "estimated_cost_usd": 0.070357,
+      "turns_used": 2
+    }
+  },
+  "elapsed_s": 67.26
+}

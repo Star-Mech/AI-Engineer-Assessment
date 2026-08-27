@@ -1,0 +1,262 @@
+{
+  "sender_name": "Greg Whitmore",
+  "sender_email": "greg.whitmore@mailbox.example",
+  "sender_phone": null,
+  "claimed_booking_refs": [
+    "AER-5C9X3T"
+  ],
+  "claimed_flights": [
+    {
+      "flight_no": "AK229",
+      "date": "2026-08-05",
+      "route_hint": "LHR-GVA"
+    },
+    {
+      "flight_no": null,
+      "date": "2026-08-05",
+      "route_hint": "LHR-GVA"
+    },
+    {
+      "flight_no": null,
+      "date": "2026-08-10",
+      "route_hint": "LHR-GVA"
+    }
+  ],
+  "named_passengers_mentioned": [
+    "Greg Whitmore"
+  ],
+  "thread": [
+    {
+      "seq": 2,
+      "sent_at": "2026-06-01T09:12:00",
+      "party": "PASSENGER",
+      "gist": "Booking confirmation received for AER-5C9X3T, LHR-GVA on 5 August. Thanks.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 3,
+      "sent_at": "2026-06-01T09:15:00",
+      "party": "AIRLINE",
+      "gist": "Thank you for booking with Aerlink. Your confirmation is attached.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 4,
+      "sent_at": "2026-06-09T14:40:00",
+      "party": "PASSENGER",
+      "gist": "Can I add a checked bag to this booking please?",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 5,
+      "sent_at": "2026-06-09T16:02:00",
+      "party": "AIRLINE",
+      "gist": "Yes, a 23kg bag has been added. You'll see the charge on your card.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 6,
+      "sent_at": "2026-06-10T08:31:00",
+      "party": "PASSENGER",
+      "gist": "The charge has gone through twice. Can you look at that.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 7,
+      "sent_at": "2026-06-10T11:55:00",
+      "party": "AIRLINE",
+      "gist": "Apologies, one of those was an authorisation hold and will drop off in 3-5 days.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 8,
+      "sent_at": "2026-06-15T19:20:00",
+      "party": "PASSENGER",
+      "gist": "It has dropped off, thanks.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 9,
+      "sent_at": "2026-07-02T10:05:00",
+      "party": "AIRLINE",
+      "gist": "Summer fares to the Alps - book by 31 July. [newsletter]",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 10,
+      "sent_at": "2026-07-02T10:07:00",
+      "party": "PASSENGER",
+      "gist": "Please stop sending me these.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 11,
+      "sent_at": "2026-07-17T13:44:00",
+      "party": "PASSENGER",
+      "gist": "Can I choose my seat in advance? I'd like an aisle.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 12,
+      "sent_at": "2026-07-17T15:10:00",
+      "party": "AIRLINE",
+      "gist": "Seat 14C has been allocated to you.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 13,
+      "sent_at": "2026-07-18T07:55:00",
+      "party": "PASSENGER",
+      "gist": "14C is fine. Thank you.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 14,
+      "sent_at": "2026-08-03T17:30:00",
+      "party": "AIRLINE",
+      "gist": "Advance notice: some services on 5 August may be affected by crew availability at LHR.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 15,
+      "sent_at": "2026-08-04T08:00:00",
+      "party": "PASSENGER",
+      "gist": "What does that notice mean for AK229 on Wednesday? Is it going or not?",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 16,
+      "sent_at": "2026-08-04T12:22:00",
+      "party": "AIRLINE",
+      "gist": "AK229 is currently scheduled to operate. We will contact you if that changes.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 17,
+      "sent_at": "2026-08-05T07:34:00",
+      "party": "AIRLINE",
+      "gist": "AK229 LHR-GVA on 5 August has been cancelled. We are sorry for the disruption.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 18,
+      "sent_at": "2026-08-05T07:51:00",
+      "party": "PASSENGER",
+      "gist": "You have got to be joking. You told me yesterday it was operating.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 19,
+      "sent_at": "2026-08-05T08:14:00",
+      "party": "PASSENGER",
+      "gist": "CANCEL THE WHOLE BOOKING AND REFUND ME IN FULL. I do not want to be rebooked, I do not want a voucher, I want my money back and I will make my own arrangements.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 20,
+      "sent_at": "2026-08-05T09:40:00",
+      "party": "AIRLINE",
+      "gist": "We have received your request. A refund request has been queued for review.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 21,
+      "sent_at": "2026-08-05T14:05:00",
+      "party": "PASSENGER",
+      "gist": "Please DISREGARD the refund request below. My sister will drive me to the meeting; do NOT refund the booking. I still need to get back later in the month.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 22,
+      "sent_at": "2026-08-05T14:31:00",
+      "party": "AIRLINE",
+      "gist": "Understood. The refund request has been withdrawn and no refund will be issued. Your booking remains live.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 23,
+      "sent_at": "2026-08-06T18:47:00",
+      "party": "PASSENGER",
+      "gist": "Put me on the earliest Geneva flight you have on MONDAY 10 AUGUST. Same booking, same seat preference if possible. Please action the most recent one.",
+      "is_instruction_block": false
+    },
+    {
+      "seq": 1,
+      "sent_at": "2026-08-07T06:20:33Z",
+      "party": "PASSENGER",
+      "gist": "Forwarding entire thread because multiple agents asked for the same explanation; please read to the end and action the latest request.",
+      "is_instruction_block": false
+    }
+  ],
+  "requests": [
+    {
+      "beneficiary": "Greg Whitmore",
+      "ask": "Add a checked bag to this booking.",
+      "superseded": false
+    },
+    {
+      "beneficiary": "Greg Whitmore",
+      "ask": "Investigate duplicate charge for baggage (double charge).",
+      "superseded": false
+    },
+    {
+      "beneficiary": "Greg Whitmore",
+      "ask": "Please stop sending marketing emails (marketing unsubscribe).",
+      "superseded": false
+    },
+    {
+      "beneficiary": "Greg Whitmore",
+      "ask": "Allocate/choose a seat in advance (aisle preference).",
+      "superseded": false
+    },
+    {
+      "beneficiary": "Greg Whitmore",
+      "ask": "Cancel the whole booking and refund me in full (refund request).",
+      "superseded": true
+    },
+    {
+      "beneficiary": "Greg Whitmore",
+      "ask": "Disregard the refund request; do NOT refund the booking (keep booking live).",
+      "superseded": false
+    },
+    {
+      "beneficiary": "Greg Whitmore",
+      "ask": "Is AK229 on Wednesday (2026-08-05) operating?",
+      "superseded": false
+    },
+    {
+      "beneficiary": "Greg Whitmore",
+      "ask": "Put me on the earliest Geneva flight you have on MONDAY 10 AUGUST (same booking, same seat preference if possible).",
+      "superseded": false
+    }
+  ],
+  "most_recent_intention": "Put Greg Whitmore on the earliest Geneva flight on 2026-08-10, on the same booking, keep same seat preference if possible.",
+  "claimed_facts": {
+    "cause": null,
+    "delay_minutes": null,
+    "delay_type": "UNSPECIFIED",
+    "tier": null,
+    "flight_status": "CANCELLED",
+    "amount_demanded_gbp": null
+  },
+  "embedded_instructions": [],
+  "language": "en",
+  "consent_to_english": false,
+  "tone": {
+    "rude": true,
+    "threatening": false,
+    "discriminatory": false
+  },
+  "out_of_scope": [
+    {
+      "item": "Marketing unsubscribe (request to stop marketing emails)",
+      "suggested_queue": "GENERAL"
+    }
+  ],
+  "asked_for_earliest": true,
+  "expressed_travel_preference": true,
+  "sae_damage_claimed": false,
+  "disputes_recorded_cause": false,
+  "dispute_evidence_offered": null,
+  "summary": "Greg Whitmore has forwarded a long thread about booking AER-5C9X3T (LHR-GVA). His current request: rebook him on the earliest Geneva flight on 10 Aug on the same booking and keep his seat preference (aisle/14C)."
+}

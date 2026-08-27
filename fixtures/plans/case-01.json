@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "rebooking",
+    "args": {
+      "passenger_ids": [
+        "P1"
+      ],
+      "option_id": "OPT-F1C4639EBC",
+      "flight_no": "AK845",
+      "date": "2026-08-04",
+      "cabin": "ECONOMY",
+      "fare_gbp": 0,
+      "operated_by": "Aerlink"
+    },
+    "rationale": "Passenger explicitly requested the earliest available flight today (Gatwick acceptable). Own-carrier Economy seat from Heathrow at the earliest time avoids an inter-airport transfer and is actionable without referral under S6.1 and S6.3."
+  },
+  {
+    "kind": "escalation",
+    "args": {
+      "summary": "AER-4K2P9X. Identity confirmed via booking ref + surname. AK412 LHR-BCN 2026-08-04 was cancelled; operational cause WEATHER (extraordinary). Passenger Priya Raghunathan requested earliest same-day arrival (Gatwick acceptable). Rebooked own-carrier in same cabin to avoid inter-airport transfer: AK845 LHR-BCN 2026-08-04 ECONOMY, dep 09:15 local, arr 11:27 local, at \u00a30 fare difference under S6.1/S6.3. Passenger reports purchasing breakfast and two coffees during the disruption and has receipts. Duty of care is triggered on cancellation regardless of cause (S4.1/S4.3). There is no tool to reimburse passenger-booked meals directly.",
+      "requested_decision": "Approve reimbursement of Priya Raghunathan\u2019s reasonable meals/refreshments against itemised receipts, capped at \u00a330 per passenger per 6-hour period per S4.2.",
+      "queue": "GENERAL",
+      "recommendation": "Authorise reimbursement on receipt submission up to the S4.2 cap. If receipts exceed the cap, pay to the cap only; consider goodwill above cap only if a separate, documented service failure is established under S11 (none claimed beyond a lack of information at the desk). Provide the passenger with instructions on where/how to submit the receipts.",
+      "blocking_clause": "S4.2 duty-of-care reimbursement required; no direct reimbursement tool exists for passenger-booked meals (tool gap)."
+    },
+    "rationale": ""
+  }
+]

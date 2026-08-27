@@ -1,0 +1,58 @@
+{
+  "sender_name": "Priya Raghunathan",
+  "sender_email": "priya.raghunathan@mailbox.example",
+  "sender_phone": null,
+  "claimed_booking_refs": [
+    "AER-4K2P9X"
+  ],
+  "claimed_flights": [
+    {
+      "flight_no": "AK412",
+      "date": "2026-08-04",
+      "route_hint": "Heathrow to Barcelona"
+    }
+  ],
+  "named_passengers_mentioned": [
+    "Priya Raghunathan"
+  ],
+  "thread": [
+    {
+      "seq": 1,
+      "sent_at": "2026-08-04T08:12:44+01:00",
+      "party": "PASSENGER",
+      "gist": "Passenger says flight AK412 from Heathrow to Barcelona this morning was cancelled; asks to be put on the next available flight (Gatwick acceptable); was at Heathrow from 05:30, waited with no info and bought breakfast and two coffees and kept receipts.",
+      "is_instruction_block": false
+    }
+  ],
+  "requests": [
+    {
+      "beneficiary": "Priya Raghunathan",
+      "ask": "Rebook onto the next available flight to Barcelona today; Gatwick acceptable.",
+      "superseded": false
+    }
+  ],
+  "most_recent_intention": "Rebook onto the next available flight to Barcelona today; Gatwick acceptable.",
+  "claimed_facts": {
+    "cause": null,
+    "delay_minutes": null,
+    "delay_type": "DEPARTURE",
+    "tier": null,
+    "flight_status": "CANCELLED",
+    "amount_demanded_gbp": null
+  },
+  "embedded_instructions": [],
+  "language": "en",
+  "consent_to_english": false,
+  "tone": {
+    "rude": false,
+    "threatening": false,
+    "discriminatory": false
+  },
+  "out_of_scope": [],
+  "asked_for_earliest": true,
+  "expressed_travel_preference": true,
+  "sae_damage_claimed": false,
+  "disputes_recorded_cause": false,
+  "dispute_evidence_offered": null,
+  "summary": "Priya Raghunathan (passenger) reports AK412 from Heathrow to Barcelona was cancelled this morning and requests rebooking onto the next available flight to arrive in Barcelona today; Gatwick is acceptable. She was at Heathrow from 05:30, received no information at the desk, went home and kept receipts for breakfast and two coffees."
+}

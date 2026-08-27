@@ -1,0 +1,33 @@
+{
+  "at": "20260827T062556Z",
+  "mode": "EXECUTE",
+  "offline": false,
+  "cases": 12,
+  "audit_totals": {
+    "money_paid_gbp": 1202.5,
+    "rebookings_confirmed": 3,
+    "hotel_vouchers_issued": 2,
+    "escalations_raised": 16
+  },
+  "estimated_spend_usd": 1.5706,
+  "records": [
+    "case-01",
+    "case-02",
+    "case-03",
+    "case-04",
+    "case-05",
+    "case-06",
+    "case-07",
+    "case-08",
+    "case-09",
+    "case-10",
+    "case-11",
+    "case-12"
+  ],
+  "tokens": {
+    "prompt": 553233,
+    "cached_prompt": 399104,
+    "completion": 158584
+  },
+  "note": "Spend recomputed after a reporting bug: a case barred at identity never reaches the agent, and the original total skipped its extraction cost."
+}

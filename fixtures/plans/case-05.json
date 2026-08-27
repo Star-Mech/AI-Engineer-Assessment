@@ -1,0 +1,13 @@
+[
+  {
+    "kind": "escalation",
+    "args": {
+      "summary": "Identity confirmed via booking ref AER-9L5D2R and surname. AK808 EDI\u2192AMS on 2026-08-03 was cancelled. Operational record shows cause_code=WEATHER; cause note: freezing fog at EDI, RVR below minima 17:20\u201323:00 local; crew on stand. Entitlement service (APCP-2026-04 v11.3) assesses compensation NOT_PAYABLE due to extraordinary cause; duty of care triggered on cancellation. Passenger requests reimbursement of \u00a3112 for an overnight hotel in Edinburgh (receipt stated as available). Amount is within S4.2 hotel cap (\u00a3180/room/night, max 3 nights). No rerouting is on record; passenger has not chosen between re-route and refund.",
+      "requested_decision": "Approve reimbursement of \u00a3112 for one night of passenger-arranged hotel on 2026-08-03 in Edinburgh under S4.4, against receipt, to original form of payment. If receipt not supplied, please request and then process.",
+      "queue": "GENERAL",
+      "recommendation": "Pay \u00a3112 as duty-of-care reimbursement (within cap, one night). Note to advise passenger that meals/refreshments (\u00a330 per 6h) and surface transport (\u00a345 per journey) are also reimbursable against receipts if they wish to submit them.",
+      "blocking_clause": "S4.4 provides for reimbursement against receipts, but there is no direct reimbursement tool for passenger-arranged care; per S12.5 this requires manual processing via a human agent."
+    },
+    "rationale": ""
+  }
+]

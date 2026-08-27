@@ -1,0 +1,13 @@
+[
+  {
+    "kind": "hotel_voucher",
+    "args": {
+      "station": "LGW",
+      "night": "2026-08-06",
+      "passenger_ids": [
+        "P1"
+      ]
+    },
+    "rationale": "Duty of care triggered immediately on cancellation (S4.1). Hotel within \u00a3180 cap and allocation confirmed (S4.2, S4.5). Passenger stranded overnight at LGW due to AK512 cancellation."
+  }
+]
